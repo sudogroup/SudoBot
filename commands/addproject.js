@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'addproject',
 	description: 'This will add a new project Channel!',
-	admin: true,
+	contributor: true,
 	execute(msg, args) {
 		// get all roles and channels
 		const roles = new Map(),
