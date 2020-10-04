@@ -3,7 +3,7 @@ const fs = require('fs');
 // const TwitchJs = require('twitch-js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { discord_token, prefix } = require('./assets/config/config.json');
+const { discordToken, prefix } = require('./assets/config/config.json');
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -35,20 +35,17 @@ client.on('message', msg => {
 	console.log(commandName);
 
 	// commands
-	// Whenever you want to add a new command, you simply make a new file in commands directory, name it what you want.
-
-	// Check for Aliases
+	// check for aliases
 	const command = client.commands.get(commandName)
 		|| client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-
 	if (!command) return;
 
-	// Check if the command is guild only command, does not work in DM
+	// check if the command is guild only command, does not work in DM
 	if (command.guildOnly && msg.channel.type === 'dm') {
 		return msg.reply('I can\'t execute that command inside DMs!');
 	}
 
-	// Check if it requires arguments
+	// check if the command requires arguments
 	if (command.args && !args.length) {
 		let reply = `You didn't provide any arguments, ${msg.author}!`;
 
@@ -59,7 +56,7 @@ client.on('message', msg => {
 		return msg.channel.send(reply);
 	}
 
-	// Check if command requires a cooldown period
+	// check if command requires a cooldown period
 	if (!cooldowns.has(command.name)) {
 		cooldowns.set(command.name, new Discord.Collection());
 	}
@@ -80,7 +77,17 @@ client.on('message', msg => {
 	timestamps.set(msg.author.id, now);
 	setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
 
-	// Execute
+	// if the command requires admin to run, check
+	if(command.admin) {
+		const roles = new Map();
+		msg.guild.roles.cache.map(role => roles.set(role.name, new Object({ object: role, name: role.name, id: role.id })));
+		// check if the user has admin permission
+		if(!msg.member.roles.cache.has(roles.get('admins').object.id)) {
+			msg.channel.send("You don't have a permission to run the command!");
+			return;
+		}
+	}
+	// execute
 	try {
 		command.execute(msg, args);
 	}
@@ -90,4 +97,4 @@ client.on('message', msg => {
 	}
 });
 
-client.login(discord_token);
+client.login(discordToken);
