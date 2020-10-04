@@ -3,6 +3,7 @@ module.exports = {
 	description: 'This will add a streamer to streamers role and create a new channel for the new dude!',
 	args: true,
 	usage: '<twitch_username> <discord_username>',
+	admin: true,
 	execute(msg, args) {
 		// get all roles and channels
 		const roles = new Map(),
