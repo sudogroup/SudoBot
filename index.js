@@ -77,12 +77,12 @@ client.on('message', msg => {
 	timestamps.set(msg.author.id, now);
 	setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
 
-	// if the command requires admin to run, check
-	if(command.admin) {
+	// if the command requires contributor to run, check
+	if(command.contributor) {
 		const roles = new Map();
 		msg.guild.roles.cache.map(role => roles.set(role.name, new Object({ object: role, name: role.name, id: role.id })));
 		// check if the user has admin permission
-		if(!msg.member.roles.cache.has(roles.get('admins').object.id)) {
+		if(!msg.member.roles.cache.has(roles.get('contributors').object.id)) {
 			msg.channel.send("You don't have a permission to run the command!");
 			return;
 		}
