@@ -24,10 +24,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-	
-	
-
-
 	// don't read if the message doesn't start with a prefix
 	if (!msg.content.startsWith(prefix) || msg.author.bot) return;
 

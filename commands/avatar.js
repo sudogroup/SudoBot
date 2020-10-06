@@ -3,7 +3,6 @@ module.exports = {
 	description: 'Get links of users AVATARs!',
 	usage: 'blank for your AV, <user> or <user> <user> <user> <user> to get multiple users\' avatars',
 	aliases: ['icon', 'pfp'],
-
 	execute(msg) {
 		if (!msg.mentions.users.size) {
 			return msg.channel.send(`Your avatar: <${msg.author.displayAvatarURL({ format: 'png', dynamic: true })}>`);

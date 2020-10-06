@@ -4,7 +4,6 @@ module.exports = {
 	usage: '',
 	contributor: true,
 	execute(msg) {
-
 		// The plan is to keep fetching messages from the target channel until no more messages are coming
 		function deleteMessages(number) {
 			const limit = 1;
