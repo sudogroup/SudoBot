@@ -83,7 +83,7 @@ client.on('message', msg => {
 		msg.guild.roles.cache.map(role => roles.set(role.name, new Object({ object: role, name: role.name, id: role.id })));
 		// check if the user has admin permission
 		if(!msg.member.roles.cache.has(roles.get('contributors').object.id)) {
-			msg.channel.send("You don't have a permission to run the command!");
+			msg.channel.send('You don\'t have a permission to run the command!');
 			return;
 		}
 	}
