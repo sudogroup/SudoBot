@@ -9,10 +9,8 @@ module.exports = {
 	usage: '<url>',
 	contributor: true,
 	async execute(msg, args) {
-        console.log(bitlyToken)
         // get parameters
 		const url = args[0]; // only used by one person
-		console.log(url);
 
         // create an invite link
         const response = await bitly.shorten(url).catch(console.log);

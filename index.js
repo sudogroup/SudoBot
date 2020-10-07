@@ -77,6 +77,17 @@ client.on('message', msg => {
 	timestamps.set(msg.author.id, now);
 	setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
 
+	// if the command requires admin to run, check
+	if(command.moderator) {
+		const roles = new Map();
+		msg.guild.roles.cache.map(role => roles.set(role.name, new Object({ object: role, name: role.name, id: role.id })));
+		// check if the user has admin permission
+		if(!msg.member.roles.cache.has(roles.get('moderators').object.id)) {
+			msg.channel.send("You don't have a permission to run the command!");
+			return;
+		}
+	}
+
 	// if the command requires contributor to run, check
 	if(command.contributor) {
 		const roles = new Map();
@@ -93,7 +104,20 @@ client.on('message', msg => {
 	}
 	catch (error) {
 		console.error(error);
-		msg.reply('there was an error trying to execute that command!');
+		msg.channel.send('there was an error trying to execute that command!');
+	}
+	if(command.moderator) {
+		// get all channels
+		const channels = new Map();
+		msg.guild.channels.cache.map(channel => channels.set(channel.name, new Object({ object: channel, name: channel.name, id: channel.id })));
+
+		// get logs channel
+		const logs = channels.get('logs').object
+
+		// send log to logs channel if the command mentions someone
+		if(msg.mentions.members.first()){
+			logs.send(`<@${msg.member.id}>: ${command.name} <@${msg.mentions.members.first().id}>`)
+		}
 	}
 });
 

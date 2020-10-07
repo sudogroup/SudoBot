@@ -1,6 +1,8 @@
 module.exports = {
 	name: 'addproject',
-	description: 'This will add a new project Channel!',
+	description: 'This will add a new project channel!',
+	args: true,
+	usage: '<project>',
 	contributor: true,
 	execute(msg, args) {
 		// get all roles and channels
@@ -10,8 +12,7 @@ module.exports = {
 		msg.guild.channels.cache.map(channel => channels.set(channel.name, new Object({ object: channel, name: channel.name, id: channel.id })));
 
 		// get parameters
-		const project = args[1];
-		console.log(project);
+		const project = args[0];
 
 		// create the new channel
 		msg.guild.channels.create(project, { parent: channels.get('/projects').object });
