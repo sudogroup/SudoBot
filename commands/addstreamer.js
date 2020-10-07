@@ -3,7 +3,7 @@ module.exports = {
 	description: 'This will add a streamer to streamers role and create a new channel for the new dude!',
 	args: true,
 	usage: '<twitch_username> <discord_username>',
-	contributor: true,
+	moderator: true,
 	execute(msg, args) {
 		// get all roles and channels
 		const roles = new Map(),
@@ -12,11 +12,11 @@ module.exports = {
 		msg.guild.channels.cache.map(channel => channels.set(channel.name, new Object({ object: channel, name: channel.name, id: channel.id })));
 
 		// get parameters
-		const twitch_username = args[1],
+		const twitch_username = args[0],
 			discord_username = msg.mentions.members.first();
 
-		console.log(twitch_username);
-		console.log(discord_username);
+		// console.log(twitch_username);
+		// console.log(discord_username);
 
 		// add the user to the role
 		discord_username.roles.add(roles.get('streamers').object);
