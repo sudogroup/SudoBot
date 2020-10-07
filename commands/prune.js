@@ -4,7 +4,6 @@ module.exports = {
 	execute(msg, args) {
 		const amount = parseInt(args[0]) + 1;
 
-
 		if (isNaN(amount)) {
 			return msg.reply('that doesn\'t seem to be a valid number.');
 		}

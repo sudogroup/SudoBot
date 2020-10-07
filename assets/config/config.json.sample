@@ -1,4 +1,5 @@
 {
     "prefix": "!sudo ",
+    "bitlyToken": "YORTOKENHERE",
     "discordToken": "YORTOKENHERE"
 }
