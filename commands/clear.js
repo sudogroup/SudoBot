@@ -8,8 +8,10 @@ module.exports = {
 		function deleteMessages(number) {
 			const limit = 1;
 			console.log(`calling deleteMessages number: ${number}`);
-			msg.channel.messages.fetch({ limit: limit }, false, true).then(async messages => {
-				if(messages.size > 0) {
+			msg.channel.messages.fetch({
+				limit: limit
+			}, false, true).then(async messages => {
+				if (messages.size > 0) {
 					const lastMessage = messages.first();
 					await msg.channel.messages.delete(lastMessage.id);
 

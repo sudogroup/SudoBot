@@ -4,6 +4,9 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { discordToken, prefix } = require('./assets/config/config.json');
+// const { musicQueue } = require('./assets/musicQueue.js');
+const musicQueue = new Map();
+
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
