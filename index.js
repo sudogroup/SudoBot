@@ -2,7 +2,7 @@
 const fs = require('fs');
 // const TwitchJs = require('twitch-js');
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'] }); // Add whatever you want to use from discordjs here, this is activating partils, needed for roles assignment stuff.
 const { discordToken, prefix } = require('./assets/config/config.json');
 
 client.commands = new Discord.Collection();
@@ -18,6 +18,8 @@ for (const file of commandFiles) {
 // prepare for cooldown implementation
 const cooldowns = new Discord.Collection();
 
+const rules_listener = require('./models/reactions_listener');
+rules_listener.execute(client);
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
