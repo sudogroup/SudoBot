@@ -1,0 +1,20 @@
+CREATE TABLE Streamer (
+    streamerID INTEGER PRIMARY KEY AUTOINCREMENT,
+    streamerDiscordUsername text,
+    streamerTwitchUsername text,
+    streamerStatus INTEGER,
+    streamerLastLive INTEGER
+);
+
+CREATE TABLE Project (
+    projectID INTEGER PRIMARY KEY AUTOINCREMENT,
+    projectName text,
+    projectRole INTEGER
+);
+
+CREATE TABLE MuteList (
+    muteID INTEGER PRIMARY KEY AUTOINCREMENT,
+    muteStartTime text,
+    muteEndDate INTEGER,
+    muteUserID INTEGER
+);
