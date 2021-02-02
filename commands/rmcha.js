@@ -10,13 +10,13 @@ module.exports = {
         const channel_name = args[0];
 
 
-        let channel_id = msg.guild.channels.cache.find(channel => channel.name === channel_name).id;
+        let channel_id = msg.guild.channels.cache.find(channel => channel.name === channel_name);
 
         if(channel_id == null || channel_id == undefined){
             return msg.channel.send(`❌ There's no channel with this name, try again! `);
         }
         
-        const fetchedChannel = msg.guild.channels.cache.get(channel_id);
+        const fetchedChannel = msg.guild.channels.cache.get(channel_id.id);
 
         if(fetchedChannel.delete()){
             return msg.channel.send(`✅ The channel has been deleted successfully`);
