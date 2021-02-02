@@ -3,7 +3,7 @@ module.exports = {
     description:
         "Create a channel under a category and type",
     args: true,
-    usage: "<parent_category> <channel_name> <channel_type>",
+    usage: "<channel_name> <channel_type> <parent_category>",
     moderator: true,
     async execute(msg, args) {
         const channels = new Map();
@@ -31,13 +31,13 @@ module.exports = {
         
 
         // get parameters
-        const parent_category = args[0];
-        const channel_name = args[1];
-        const channel_type = args[2];
+        const channel_name = args[0];
+        const channel_type = args[1];
+        const parent_category = args[2];
 
         // check if parent category null or doesn't exists 
         if(parent_category == null || parent_category == undefined){
-            return msg.channel.send(`Make sure that you fill the parent category`);
+            return msg.channel.send(`❌ Make sure that you fill the parent category`);
         }
 
         // check if type only text or voice
@@ -52,7 +52,7 @@ module.exports = {
             });
 
             if(shouldIBreak){
-                return msg.channel.send(`Channel exists, Please choose another name 🥰`);
+                return msg.channel.send(`❌ Channel exists, Please choose another name`);
             }
 
             if(categories.includes(parent_category)){
@@ -65,7 +65,9 @@ module.exports = {
                 msg.channel.send(
                     `A new channel ${channel_name} 🚀🚀 \n was created, type: ${channel_type}, under: ${parent_category}`
                 );
-            }
+            }else{
+                return msg.channel.send(`❌ Category does not exists, Please make sure`);
+            }  
 
             console.log(parent_category);
             console.log(channel_name);
