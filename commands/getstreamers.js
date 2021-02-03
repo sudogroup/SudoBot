@@ -1,9 +1,6 @@
 module.exports = {
-    name: "addstreamer",
-    description:
-        "This will add a streamer to streamers role and create a new channel for the new dude!",
-    args: true,
-    usage: "<twitch_username> <discord_username>",
+    name: "getstreamres",
+    description: "",
     moderator: true,
     async execute(msg, args) {
         // get all roles and channels
