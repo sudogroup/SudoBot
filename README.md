@@ -1,3 +1,3 @@
-# SudoSM (Sudo Server Manager)
+# SudoBot
 
-A bot to manage discord servers (currently).
+A bot to manage Discord servers (currently) and Twitch.
