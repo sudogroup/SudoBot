@@ -44,6 +44,7 @@ const {
     prefix,
     twitchToken,
 } = require("./assets/config/config.json");
+// const musicQueue = new Map();
 client.commands = new Discord.Collection();
 const commandFiles = fs
     .readdirSync("./commands")
