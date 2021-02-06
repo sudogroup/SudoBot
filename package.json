@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "prettier --write . --tab-width 4; nodemon index.js",
-        "dep": "prettier --write . --tab-width 4; pm2 start index.js",
+        "dev": "prettier --write . --tab-width 4 && nodemon index.js",
+        "dep": "prettier --write . --tab-width 4 && pm2 start index.js",
         "stop": "pm2 stop index.js"
     },
     "author": "",
