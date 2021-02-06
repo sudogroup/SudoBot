@@ -4,14 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "prettier --write . --tab-width 4; nodemon index.js",
+        "dep": "prettier --write . --tab-width 4; pm2 start index.js",
+        "stop": "pm2 stop index.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@discordjs/opus": "^0.3.3",
-        "bitly": "^7.1.0",
+        "bitly": "^7.1.2",
         "discord.js": "^12.3.1",
         "ffmpeg-static": "^4.2.7",
         "m3u8stream": "^0.8.3",
@@ -20,5 +21,9 @@
         "sqlite3": "^5.0.1",
         "util": "^0.12.3",
         "ytdl-core": "^4.4.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1"
     }
 }
