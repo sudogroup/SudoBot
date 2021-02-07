@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "prettier --write . --tab-width 4 && nodemon app/index.js",
         "dep": "prettier --write . --tab-width 4 && pm2 start app/index.js",
+        "jsdoc": "./node_modules/.bin/jsdoc -r app -d docs -t ./node_modules/clean-jsdoc-theme",
         "stop": "pm2 stop app/index.js"
     },
     "author": "",
@@ -23,6 +24,8 @@
         "ytdl-core": "^4.4.5"
     },
     "devDependencies": {
+        "clean-jsdoc-theme": "^3.0.7",
+        "jsdoc": "^3.6.6",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1"
     }

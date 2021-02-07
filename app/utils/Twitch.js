@@ -1,6 +1,10 @@
 const { TWITCH_TOKEN } = require("../../.env"),
     fetch = require("node-fetch");
 
+/**
+ * Is Live
+ * @param {Twitch.User} user - twitch user
+ */
 const isLive = async ({ user }) => {
     return fetch(`https://api.twitch.tv/kraken/streams/${user._id}`, {
         method: "get",
@@ -20,6 +24,10 @@ const isLive = async ({ user }) => {
             }
         });
 };
+/**
+ * Get User
+ * @param {String} username - twitch username
+ */
 const getUser = async ({ username }) => {
     return fetch(`https://api.twitch.tv/kraken/users?login=${username}`, {
         method: "get",
