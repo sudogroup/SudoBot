@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "prettier --write . --tab-width 4 && nodemon app/index.js",
+        "dev": "./node_modules/.bin/jsdoc -r app -d docs -t ./node_modules/clean-jsdoc-theme && prettier --write . --tab-width 4 && nodemon app/index.js",
         "dep": "prettier --write . --tab-width 4 && pm2 start app/index.js",
         "jsdoc": "./node_modules/.bin/jsdoc -r app -d docs -t ./node_modules/clean-jsdoc-theme",
         "stop": "pm2 stop app/index.js"

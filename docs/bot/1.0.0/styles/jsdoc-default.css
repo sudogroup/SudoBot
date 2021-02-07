@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'body';
+    font-family: "body";
     font-size: 16px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -53,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'heading';
+    font-family: "heading";
 }
 
 h1,
@@ -85,7 +85,7 @@ h1.page-title {
 h1.page-title::after,
 article h1::after {
     bottom: 5px;
-    content: '';
+    content: "";
     display: block;
     height: 15px;
     position: absolute;
@@ -133,7 +133,7 @@ code,
 kbd,
 samp {
     border-radius: 5px;
-    font-family: 'code';
+    font-family: "code";
     font-size: 80%;
     padding: 1px 5px;
 }
@@ -175,7 +175,7 @@ section h2 {
 
 section h2::after {
     bottom: 0;
-    content: '';
+    content: "";
     display: block;
     height: 10px;
     position: absolute;
@@ -237,7 +237,7 @@ nav > h2 > a {
 /* stylelint-disable */
 nav > h2 > a > .text::after {
     bottom: -5px;
-    content: '';
+    content: "";
     display: block;
     height: 20px;
     position: absolute;
@@ -256,7 +256,7 @@ nav .search-box {
 nav .search-box input {
     border: 0;
     border-radius: 5px;
-    font-family: 'body';
+    font-family: "body";
     font-size: 14px;
     padding: 5px 10px;
     width: 100%;
@@ -321,7 +321,7 @@ nav h3 {
 
 .sidebar-list-div ul,
 nav ul {
-    font-family: 'body';
+    font-family: "body";
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -329,7 +329,7 @@ nav ul {
 
 nav ul a {
     display: block;
-    font-family: 'body';
+    font-family: "body";
     font-size: 12px;
     line-height: 18px;
     padding: 0;
@@ -379,12 +379,12 @@ footer {
 }
 
 .signature {
-    font-family: 'code';
+    font-family: "code";
     font-size: 80%;
 }
 
 .name {
-    font-family: 'code';
+    font-family: "code";
     font-size: 110%;
     font-weight: bold;
 }
@@ -534,7 +534,7 @@ table {
 .params .name,
 .props .name,
 .name code {
-    font-family: 'code';
+    font-family: "code";
     font-size: 100%;
 }
 
@@ -587,7 +587,7 @@ dl.param-type {
 }
 
 .param-type dd {
-    font-family: 'code';
+    font-family: "code";
     font-size: 80%;
 }
 
@@ -638,7 +638,7 @@ dl.param-type {
 .navicon::before,
 .navicon::after {
     border-radius: 1rem;
-    content: '';
+    content: "";
     display: block;
     height: 0.125rem;
     position: absolute;
