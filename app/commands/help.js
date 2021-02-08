@@ -4,7 +4,7 @@ const { PREFIX } = require("../../.env");
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const help = async (msg, args) => {
     const data = [];
     const { commands } = msg.client;
 
@@ -60,5 +60,5 @@ module.exports = {
     aliases: ["commands"],
     usage: "[command]",
     cooldown: 5,
-    execute,
+    execute: help,
 };

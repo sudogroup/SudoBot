@@ -2,7 +2,7 @@
  * Execute on server command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const server = async (msg) => {
     msg.channel.send(
         `\nThis server's name is: ${msg.guild.name}\nTotal members: ${msg.guild.memberCount}`
     );
@@ -10,5 +10,5 @@ const execute = async (msg) => {
 module.exports = {
     name: "server",
     description: "will print some server info!",
-    execute,
+    execute: server,
 };

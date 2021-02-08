@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const mkcha = async (msg, args) => {
     const channels = new Map();
     const categories = [];
 
@@ -88,5 +88,5 @@ module.exports = {
     args: true,
     usage: "<channel_name> <channel_type> <parent_category>",
     moderator: true,
-    execute,
+    execute: mkcha,
 };

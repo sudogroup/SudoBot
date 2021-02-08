@@ -2,7 +2,7 @@
  * Execute on reaction events
  * @param {Discord.Client} client - discord client
  */
-const execute = (client) => {
+const reactions = (client) => {
     client.on("messageReactionAdd", async (reaction, user) => {
         // When we receive a reaction we check if the reaction is partial or not
         if (reaction.partial) {
@@ -73,4 +73,4 @@ const execute = (client) => {
     });
 };
 
-module.exports = { execute };
+module.exports = { execute: reactions };

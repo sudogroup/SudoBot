@@ -2,7 +2,7 @@
  * Execute on getdatabase command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg, args) => {
+const getdatabase = async (msg, args) => {
     const streamerDB = await db.getAsync("SELECT * FROM Streamer");
     // projectDB = await db.getAsync("SELECT * FROM Project"),
     // muteListDB = await db.getAsync("SELECT * FROM MuteList");
@@ -15,5 +15,5 @@ module.exports = {
     name: "getdatabase",
     description: "",
     moderator: true,
-    execute,
+    execute: getdatabase,
 };

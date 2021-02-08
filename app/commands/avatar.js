@@ -2,7 +2,7 @@
  * Execute on avatar command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const avatar = async (msg) => {
     if (!msg.mentions.users.size) {
         return msg.channel.send(
             `Your avatar: <${msg.author.displayAvatarURL({
@@ -29,5 +29,5 @@ module.exports = {
     usage:
         "blank for your AV, <user> or <user> <user> <user> <user> to get multiple users' avatars",
     aliases: ["icon", "pfp"],
-    execute,
+    execute: avatar,
 };

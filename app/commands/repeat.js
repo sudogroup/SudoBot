@@ -3,7 +3,7 @@ const { musicQueue } = require("../utils/MusicQueue");
  * Execute on repeat command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const repeat = async (msg) => {
     if (!msg.member.voice.channel)
         return msg.channel.send(
             `${msg.author.tag} You need to be in a voice channel to stop music!`
@@ -22,5 +22,5 @@ module.exports = {
     args: false,
     usage: "repeat",
     contributor: true,
-    execute,
+    execute: repeat,
 };

@@ -3,7 +3,7 @@ const { musicQueue } = require("../utils/MusicQueue");
  * Execute on resume command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const resume = async (msg) => {
     if (!msg.member.voice.channel)
         return msg.channel.send(
             `${msg.author.tag} You need to be in a voice channel to resume music!`
@@ -23,5 +23,5 @@ module.exports = {
     args: false,
     usage: "resume",
     contributor: true,
-    execute,
+    execute: resume,
 };

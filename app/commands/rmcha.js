@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const rmcha = async (msg, args) => {
     // get parameters
     const channel_name = args[0];
 
@@ -29,5 +29,5 @@ module.exports = {
     args: true,
     usage: "<channel_name>",
     moderator: true,
-    execute,
+    execute: rmcha,
 };

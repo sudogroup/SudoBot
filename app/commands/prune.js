@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const prune = async (msg, args) => {
     const amount = parseInt(args[0]) + 1;
 
     if (isNaN(amount)) {
@@ -22,5 +22,5 @@ const execute = async (msg, args) => {
 module.exports = {
     name: "prune",
     description: "Delete the latest messages, just give it a number!",
-    execute,
+    execute: prune,
 };

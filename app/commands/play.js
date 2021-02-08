@@ -7,7 +7,7 @@ const { musicQueue } = require("../utils/MusicQueue"),
  * @param {Queue} song - song queue
  * @param {Discord.Message} msg - discord message
  */
-const play = (guild, song, msg) => {
+const playAction = (guild, song, msg) => {
     const serverQueue = musicQueue.get(guild.id);
 
     if (!song) {
@@ -21,7 +21,7 @@ const play = (guild, song, msg) => {
         .on("finish", () => {
             if (!serverQueue.loop) serverQueue.songs.shift();
             console.log(musicQueue);
-            play(guild, serverQueue.songs[0], msg);
+            playAction(guild, serverQueue.songs[0], msg);
         })
         .on("error", (error) => {
             console.error(`${error}`);
@@ -44,7 +44,7 @@ const play = (guild, song, msg) => {
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const play = async (msg, args) => {
     // get parameters
     const url = args[0]; // only used by one person
     console.log(url);
@@ -93,7 +93,7 @@ const execute = async (msg, args) => {
             console.log(queueConstract.songs[0]);
             console.log(musicQueue);
 
-            play(msg.guild, queueConstract.songs[0], msg);
+            playAction(msg.guild, queueConstract.songs[0], msg);
         } catch (error) {
             console.error(
                 `There was an error connecting to the voice channel : ${error}`
@@ -117,5 +117,5 @@ module.exports = {
     args: true,
     usage: "<url>",
     contributor: true,
-    execute,
+    execute: play,
 };

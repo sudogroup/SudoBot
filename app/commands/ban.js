@@ -2,7 +2,7 @@
  * Execute on ban command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const ban = async (msg) => {
     const user = msg.mentions.members.first();
     msg.channel.send(`<@${user.id}> has been banned`);
     user.ban();
@@ -13,5 +13,5 @@ module.exports = {
     usage: "<@username>",
     args: true,
     moderator: true,
-    execute,
+    execute: ban,
 };

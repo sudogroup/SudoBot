@@ -4,7 +4,7 @@ const { getUser } = require("../utils/Twitch"),
  * Execute on ready event
  * @param {Discord.Client} client - discord client
  */
-const execute = (client) => {
+const ready = (client) => {
     client.on("ready", async () => {
         const usersStreamers = [
                 "sudomaze",
@@ -54,4 +54,4 @@ const execute = (client) => {
     });
 };
 
-module.exports = { execute };
+module.exports = { execute: ready };

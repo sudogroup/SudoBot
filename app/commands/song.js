@@ -3,7 +3,7 @@ const { musicQueue } = require("../utils/MusicQueue");
  * Execute on song command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const song = async (msg) => {
     const serverQueue = musicQueue.get(msg.guild.id);
     if (!serverQueue) return msg.channel.send(`There is nothing playing now!`);
     msg.channel.send(
@@ -19,5 +19,5 @@ module.exports = {
     args: false,
     usage: "song",
     contributor: true,
-    execute,
+    execute: song,
 };

@@ -2,7 +2,7 @@
  * Execute on unmute command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const unmute = async (msg) => {
     // get all rules
     const roles = new Map();
     msg.guild.roles.cache.map((role) =>
@@ -26,5 +26,5 @@ module.exports = {
     usage: "<@username>",
     args: true,
     moderator: true,
-    execute,
+    execute: unmute,
 };

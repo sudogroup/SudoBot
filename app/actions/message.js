@@ -6,7 +6,7 @@ const { PREFIX } = require("../../.env"),
  * Execute on message events
  * @param {Discord.Client} client - discord client
  */
-const execute = (client) => {
+const message = (client) => {
     client.on("message", (msg) => {
         // don't read if the message doesn't start with a PREFIX
         if (!msg.content.startsWith(PREFIX) || msg.author.bot) return;
@@ -156,4 +156,4 @@ const execute = (client) => {
     });
 };
 
-module.exports = { execute };
+module.exports = { execute: message };

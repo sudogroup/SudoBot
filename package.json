@@ -4,9 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "./node_modules/.bin/jsdoc -r app -d docs -t ./node_modules/clean-jsdoc-theme && prettier --write app/* --tab-width 4 && nodemon app/index.js",
+        "dev": "./node_modules/.bin/docma -c docma.json && prettier --write app/* --tab-width 4 && nodemon app/index.js",
         "dep": "pm2 start app/index.js",
-        "jsdoc": "./node_modules/.bin/jsdoc -r app -d docs -t ./node_modules/clean-jsdoc-theme",
+        "docma": "./node_modules/.bin/docma -c docma.json",
+        "serve": "./node_modules/.bin/docma serve docs -p 8080",
         "stop": "pm2 stop app/index.js"
     },
     "author": "",
@@ -25,8 +26,7 @@
         "axios": ">=0.21.1"
     },
     "devDependencies": {
-        "clean-jsdoc-theme": "^3.0.7",
-        "jsdoc": "^3.6.6",
+        "docma": "^3.2.2",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1"
     }

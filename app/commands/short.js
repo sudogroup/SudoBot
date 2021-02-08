@@ -7,7 +7,7 @@ const { CONFIG_PATH } = require("../../.env"),
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const short = async (msg, args) => {
     // get parameters
     const url = args[0]; // only used by one person
 
@@ -21,5 +21,5 @@ module.exports = {
     args: true,
     usage: "<url>",
     contributor: true,
-    execute,
+    execute: short,
 };

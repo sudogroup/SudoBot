@@ -2,7 +2,7 @@
  * Execute on clear command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const clear = async (msg) => {
     // The plan is to keep fetching messages from the target channel until no more messages are coming
     function deleteMessages(number) {
         const limit = 1;
@@ -28,5 +28,5 @@ module.exports = {
     description: "Delete all messages in a channel where command is executed!",
     usage: "",
     contributor: true,
-    execute,
+    execute: clear,
 };

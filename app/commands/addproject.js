@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const addproject = async (msg, args) => {
     // get all roles and channels
     const roles = new Map(),
         channels = new Map();
@@ -43,5 +43,5 @@ module.exports = {
     args: true,
     usage: "<project>",
     contributor: true,
-    execute,
+    execute: addproject,
 };

@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const pin = async (msg, args) => {
     msg.channel.send(args.join(" ")).then(() => {
         msg.channel.messages
             .fetch({ limit: 1 }, true, true)
@@ -23,5 +23,5 @@ module.exports = {
     usage: "<message>",
     contributor: true,
     args: true,
-    execute,
+    execute: pin,
 };

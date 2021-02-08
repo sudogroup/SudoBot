@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const getstreamers = async (msg, args) => {
     // get all roles and channels
     const roles = new Map(),
         channels = new Map();
@@ -50,5 +50,5 @@ module.exports = {
     name: "getstreamers",
     description: "",
     moderator: true,
-    execute,
+    execute: getstreamers,
 };

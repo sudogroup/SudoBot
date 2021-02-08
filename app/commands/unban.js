@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const unban = async (msg, args) => {
     const username = args.join(" ");
     msg.guild.fetchBans().then((bans) => {
         // if there aren't anyone banned
@@ -29,5 +29,5 @@ module.exports = {
     usage: "<@username>",
     args: true,
     moderator: true,
-    execute,
+    execute: unban,
 };

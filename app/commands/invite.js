@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const invite = async (msg, args) => {
     // get parameters
     let time = 10, // 10 mins
         usage = 1; // only used by one person
@@ -35,5 +35,5 @@ module.exports = {
     description: "This will an invite link",
     usage: "<time> <usage>",
     contributor: true,
-    execute,
+    execute: invite,
 };

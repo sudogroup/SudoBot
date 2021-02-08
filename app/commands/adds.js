@@ -4,7 +4,7 @@ const { getUser } = require("../utils/Twitch");
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const execute = async (msg, args) => {
+const adds = async (msg, args) => {
     // get parameters
     const twitch_username = args[0],
         discord_username = msg.mentions.members.first().user.username,
@@ -29,5 +29,5 @@ module.exports = {
         "This will add a streamer to streamers role and create a new channel for the new dude!",
     args: true,
     usage: "<twitch_username> <@discord_username>",
-    execute,
+    execute: adds,
 };

@@ -3,7 +3,7 @@ const Discord = require("discord.js");
  * Execute on addembedding command
  * @param {Discord.Message} msg - discord message
  */
-const execute = (msg) => {
+const addembedding = (msg) => {
     const embed = new Discord.MessageEmbed()
         .setColor("#0099ff")
         .setTitle("Streaming");
@@ -12,5 +12,5 @@ const execute = (msg) => {
 
 module.exports = {
     name: "addembedding",
-    execute,
+    execute: addembedding,
 };

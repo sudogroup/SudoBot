@@ -3,7 +3,7 @@ const { musicQueue } = require("../utils/MusicQueue");
  * Execute on pause command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const pause = async (msg) => {
     if (!msg.member.voice.channel)
         return msg.channel.send(
             `${msg.author.tag} You need to be in a voice channel to pause music!`
@@ -23,5 +23,5 @@ module.exports = {
     args: false,
     usage: "pause",
     contributor: true,
-    execute,
+    execute: pause,
 };

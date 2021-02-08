@@ -2,7 +2,7 @@
  * Execute on mute command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const mute = async (msg) => {
     // get all rules
     const roles = new Map();
     msg.guild.roles.cache.map((role) =>
@@ -27,5 +27,5 @@ module.exports = {
     broadcast: true,
     args: true,
     moderator: true,
-    execute,
+    execute: mute,
 };

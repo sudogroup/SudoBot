@@ -2,7 +2,7 @@
  * Execute on kick command
  * @param {Discord.Message} msg - discord message
  */
-const execute = async (msg) => {
+const kick = async (msg) => {
     const user = msg.mentions.members.first();
     msg.channel.send(`<@${user.id}> has been kicked`);
     user.kick();
@@ -13,5 +13,5 @@ module.exports = {
     usage: "<@username>",
     args: true,
     moderator: true,
-    execute,
+    execute: kick,
 };
