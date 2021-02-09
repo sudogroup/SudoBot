@@ -1,6 +1,6 @@
 {
     "app": {
-        "base": "/SudoBot"
+        "base": "/SudoBot/"
     },
     "template": {
         "path": "zebra",
@@ -52,6 +52,6 @@
     },
     "clean": true,
     "debug": true,
-    "src": ["./app/**/*.js"],
-    "dest": "./docs/SudoBot/"
+    "src": ["*.md", "./app/**/*.js"],
+    "dest": "./docs/"
 }
