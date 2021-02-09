@@ -4,8 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "prettier --write . --tab-width 4 && nodemon app/index.js",
-        "dep": "prettier --write . --tab-width 4 && pm2 start app/index.js",
+        "dev": "./node_modules/.bin/docma -c docma.json && prettier --write app/* --tab-width 4 && nodemon app/index.js",
+        "dep": "pm2 start app/index.js",
+        "docma": "./node_modules/.bin/docma -c docma.json",
+        "serve": "./node_modules/.bin/docma serve docs -p 8080",
         "stop": "pm2 stop app/index.js"
     },
     "author": "",
@@ -20,9 +22,11 @@
         "opusscript": "0.0.7",
         "sqlite3": "^5.0.1",
         "util": "^0.12.3",
-        "ytdl-core": "^4.4.5"
+        "ytdl-core": "^4.4.5",
+        "axios": ">=0.21.1"
     },
     "devDependencies": {
+        "docma": "^3.2.2",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1"
     }

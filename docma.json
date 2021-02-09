@@ -1,0 +1,57 @@
+{
+    "app": {
+        "base": "/SudoBot/"
+    },
+    "template": {
+        "path": "zebra",
+        "options": {
+            "title": {
+                "label": "SudoBot",
+                "href": "/SudoBot/"
+            },
+            "logo": {
+                "dark": "https://avatars.githubusercontent.com/u/72315676?s=200&v=4",
+                "light": "https://avatars.githubusercontent.com/u/72315676?s=200&v=4"
+            },
+            "sidebar": {
+                "enabled": true,
+                "outline": "tree",
+                "collapsed": false,
+                "toolbar": true,
+                "itemsFolded": false,
+                "itemsOverflow": "crop",
+                "badges": true,
+                "search": true,
+                "animations": true
+            },
+            "symbols": {
+                "autoLink": true,
+                "params": "list",
+                "enums": "list",
+                "props": "list",
+                "meta": true
+            },
+            "contentView": {
+                "bookmarks": "h1,h2,h3",
+                "faLibs": "solid,regular,brands"
+            },
+            "navbar": {
+                "enabled": true,
+                "dark": false,
+                "animations": true,
+                "menu": [
+                    {
+                        "label": "GitHub",
+                        "iconClass": "fab fa-github",
+                        "href": "https://github.com/sudogroup/SudoBot",
+                        "target": "_blank"
+                    }
+                ]
+            }
+        }
+    },
+    "clean": true,
+    "debug": true,
+    "src": ["*.md", "./app/**/*.js"],
+    "dest": "./docs/"
+}
