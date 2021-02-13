@@ -24,7 +24,7 @@ const virole = async (msg, args) => {
             case "color":
                 if (update) {
                     // This expression to verify the user only set a valid Hex number like #85514d
-                    if (new RegExp("#[0-9a-f]{6}").test(update)) {
+                    if (new RegExp("#[0-9A-Fa-f]{6}").test(update)) {
                         try {
                             if (findRole.setColor(update)) {
                                 return msg.channel.send(
@@ -36,7 +36,7 @@ const virole = async (msg, args) => {
                             return msg.channel.send(`❌ Something went wrong!`);
                         }
                     } else {
-                        return msg.channel.send(`❌ Color must be #rgb !`);
+                        return msg.channel.send(`❌ Color must be #hex !`);
                     }
                 } else {
                     return msg.channel.send(`❌ You must set a color value!`);
