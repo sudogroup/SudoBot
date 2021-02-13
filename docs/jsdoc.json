@@ -9,7 +9,7 @@
       "filename": "addembedding.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
         "id": "astnode100000953",
         "name": "addembedding",
@@ -49,7 +49,7 @@
       "filename": "addproject.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
         "id": "astnode100000994",
         "name": "addproject",
@@ -93,6 +93,59 @@
     "$docmaLink": "?api#addproject"
   },
   {
+    "comment": "/**\n * Execute on addrole command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
+    "meta": {
+      "range": [
+        136,
+        1173
+      ],
+      "filename": "addrole.js",
+      "lineno": 6,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100001141",
+        "name": "addrole",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "givenRole": "addrole~givenRole",
+        "member": "addrole~member",
+        "findRole": "addrole~findRole",
+        "": null
+      }
+    },
+    "description": "Execute on addrole command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      },
+      {
+        "type": {
+          "names": [
+            "Array"
+          ]
+        },
+        "description": "passed arguments",
+        "name": "args"
+      }
+    ],
+    "name": "addrole",
+    "longname": "addrole",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "addrole",
+    "$kind": "method",
+    "$docmaLink": "?api#addrole"
+  },
+  {
     "comment": "/**\n * Execute on adds command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
     "meta": {
       "range": [
@@ -102,9 +155,9 @@
       "filename": "adds.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001149",
+        "id": "astnode100001304",
         "name": "adds",
         "type": "ArrowFunctionExpression"
       },
@@ -157,9 +210,9 @@
       "filename": "addstreamer.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001264",
+        "id": "astnode100001419",
         "name": "addstreamer",
         "type": "ArrowFunctionExpression"
       },
@@ -211,9 +264,9 @@
       "filename": "args.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001458",
+        "id": "astnode100001613",
         "name": "args",
         "type": "ArrowFunctionExpression"
       }
@@ -258,9 +311,9 @@
       "filename": "avatar.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001509",
+        "id": "astnode100001664",
         "name": "avatar",
         "type": "ArrowFunctionExpression"
       },
@@ -300,9 +353,9 @@
       "filename": "ban.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001605",
+        "id": "astnode100001760",
         "name": "ban",
         "type": "ArrowFunctionExpression"
       },
@@ -341,9 +394,9 @@
       "filename": "clear.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001660",
+        "id": "astnode100001815",
         "name": "clear",
         "type": "ArrowFunctionExpression"
       },
@@ -382,9 +435,9 @@
       "filename": "getdatabase.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001769",
+        "id": "astnode100001924",
         "name": "getdatabase",
         "type": "ArrowFunctionExpression"
       },
@@ -423,9 +476,9 @@
       "filename": "getstreamers.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001807",
+        "id": "astnode100001962",
         "name": "getstreamers",
         "type": "ArrowFunctionExpression"
       },
@@ -477,9 +530,9 @@
       "filename": "Twitch.js",
       "lineno": 31,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
       "code": {
-        "id": "astnode100005475",
+        "id": "astnode100006460",
         "name": "getUser",
         "type": "ArrowFunctionExpression"
       },
@@ -518,9 +571,9 @@
       "filename": "help.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001999",
+        "id": "astnode100002154",
         "name": "help",
         "type": "ArrowFunctionExpression"
       },
@@ -572,9 +625,9 @@
       "filename": "invite.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002285",
+        "id": "astnode100002440",
         "name": "invite",
         "type": "ArrowFunctionExpression"
       },
@@ -624,9 +677,9 @@
       "filename": "Twitch.js",
       "lineno": 8,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
       "code": {
-        "id": "astnode100005403",
+        "id": "astnode100006388",
         "name": "isLive",
         "type": "ArrowFunctionExpression"
       },
@@ -665,9 +718,9 @@
       "filename": "kick.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002390",
+        "id": "astnode100002545",
         "name": "kick",
         "type": "ArrowFunctionExpression"
       },
@@ -706,7 +759,7 @@
       "filename": "message.js",
       "lineno": 9,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
       "code": {
         "id": "astnode100000022",
         "name": "message",
@@ -746,9 +799,9 @@
       "filename": "mkcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002445",
+        "id": "astnode100002600",
         "name": "mkcha",
         "type": "ArrowFunctionExpression"
       },
@@ -802,9 +855,9 @@
       "filename": "mute.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002707",
+        "id": "astnode100002862",
         "name": "mute",
         "type": "ArrowFunctionExpression"
       },
@@ -846,9 +899,9 @@
       "filename": "mvcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002815",
+        "id": "astnode100002970",
         "name": "mvcha",
         "type": "ArrowFunctionExpression"
       },
@@ -892,6 +945,60 @@
     "$docmaLink": "?api#mvcha"
   },
   {
+    "comment": "/**\n * Execute on newrole command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
+    "meta": {
+      "range": [
+        136,
+        4510
+      ],
+      "filename": "newrole.js",
+      "lineno": 6,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100003174",
+        "name": "newrole",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "givenRole": "newrole~givenRole",
+        "permissions": "newrole~permissions",
+        "findRole": "newrole~findRole",
+        "": null,
+        "options": "newrole~options"
+      }
+    },
+    "description": "Execute on newrole command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      },
+      {
+        "type": {
+          "names": [
+            "Array"
+          ]
+        },
+        "description": "passed arguments",
+        "name": "args"
+      }
+    ],
+    "name": "newrole",
+    "longname": "newrole",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "newrole",
+    "$kind": "method",
+    "$docmaLink": "?api#newrole"
+  },
+  {
     "comment": "/**\n * Execute on pause command\n * @param {Discord.Message} msg - discord message\n */",
     "meta": {
       "range": [
@@ -901,9 +1008,9 @@
       "filename": "pause.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003027",
+        "id": "astnode100003427",
         "name": "pause",
         "type": "ArrowFunctionExpression"
       },
@@ -943,9 +1050,9 @@
       "filename": "pin.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003148",
+        "id": "astnode100003548",
         "name": "pin",
         "type": "ArrowFunctionExpression"
       },
@@ -993,9 +1100,9 @@
       "filename": "ping.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003244",
+        "id": "astnode100003644",
         "name": "ping",
         "type": "ArrowFunctionExpression"
       }
@@ -1031,9 +1138,9 @@
       "filename": "play.js",
       "lineno": 47,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003441",
+        "id": "astnode100003841",
         "name": "play",
         "type": "ArrowFunctionExpression"
       },
@@ -1089,9 +1196,9 @@
       "filename": "play.js",
       "lineno": 10,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003287",
+        "id": "astnode100003687",
         "name": "playAction",
         "type": "ArrowFunctionExpression"
       },
@@ -1149,9 +1256,9 @@
       "filename": "prune.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003748",
+        "id": "astnode100004148",
         "name": "prune",
         "type": "ArrowFunctionExpression"
       },
@@ -1200,7 +1307,7 @@
       "filename": "reactions.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
       "code": {
         "id": "astnode100000590",
         "name": "reactions",
@@ -1240,7 +1347,7 @@
       "filename": "ready.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
       "code": {
         "id": "astnode100000887",
         "name": "ready",
@@ -1280,9 +1387,9 @@
       "filename": "repeat.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003842",
+        "id": "astnode100004242",
         "name": "repeat",
         "type": "ArrowFunctionExpression"
       },
@@ -1322,9 +1429,9 @@
       "filename": "resume.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003949",
+        "id": "astnode100004349",
         "name": "resume",
         "type": "ArrowFunctionExpression"
       },
@@ -1364,9 +1471,9 @@
       "filename": "rmcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004069",
+        "id": "astnode100004469",
         "name": "rmcha",
         "type": "ArrowFunctionExpression"
       },
@@ -1408,6 +1515,59 @@
     "$docmaLink": "?api#rmcha"
   },
   {
+    "comment": "/**\n * Execute on rmrole command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
+    "meta": {
+      "range": [
+        135,
+        1179
+      ],
+      "filename": "rmrole.js",
+      "lineno": 6,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100004571",
+        "name": "rmrole",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "givenRole": "rmrole~givenRole",
+        "member": "rmrole~member",
+        "findRole": "rmrole~findRole",
+        "": null
+      }
+    },
+    "description": "Execute on rmrole command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      },
+      {
+        "type": {
+          "names": [
+            "Array"
+          ]
+        },
+        "description": "passed arguments",
+        "name": "args"
+      }
+    ],
+    "name": "rmrole",
+    "longname": "rmrole",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "rmrole",
+    "$kind": "method",
+    "$docmaLink": "?api#rmrole"
+  },
+  {
     "comment": "/**\n * Execute on server command\n * @param {Discord.Message} msg - discord message\n */",
     "meta": {
       "range": [
@@ -1417,9 +1577,9 @@
       "filename": "server.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004171",
+        "id": "astnode100004726",
         "name": "server",
         "type": "ArrowFunctionExpression"
       }
@@ -1455,9 +1615,9 @@
       "filename": "short.js",
       "lineno": 10,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004242",
+        "id": "astnode100004797",
         "name": "short",
         "type": "ArrowFunctionExpression"
       },
@@ -1506,9 +1666,9 @@
       "filename": "skip.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004311",
+        "id": "astnode100004866",
         "name": "skip",
         "type": "ArrowFunctionExpression"
       },
@@ -1548,9 +1708,9 @@
       "filename": "song.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004438",
+        "id": "astnode100004993",
         "name": "song",
         "type": "ArrowFunctionExpression"
       },
@@ -1589,9 +1749,9 @@
       "filename": "stop.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004530",
+        "id": "astnode100005085",
         "name": "stop",
         "type": "ArrowFunctionExpression"
       },
@@ -1631,9 +1791,9 @@
       "filename": "unban.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004663",
+        "id": "astnode100005218",
         "name": "unban",
         "type": "ArrowFunctionExpression"
       },
@@ -1682,9 +1842,9 @@
       "filename": "unmute.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004765",
+        "id": "astnode100005320",
         "name": "unmute",
         "type": "ArrowFunctionExpression"
       },
@@ -1726,9 +1886,9 @@
       "filename": "unpin.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004871",
+        "id": "astnode100005426",
         "name": "unpin",
         "type": "ArrowFunctionExpression"
       },
@@ -1765,5 +1925,60 @@
     "$longname": "unpin",
     "$kind": "method",
     "$docmaLink": "?api#unpin"
+  },
+  {
+    "comment": "/**\n * Execute on virole command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
+    "meta": {
+      "range": [
+        135,
+        8704
+      ],
+      "filename": "virole.js",
+      "lineno": 6,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100005644",
+        "name": "virole",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "givenRole": "virole~givenRole",
+        "option": "virole~option",
+        "update": "virole~update",
+        "findRole": "virole~findRole",
+        "": null,
+        "options": "virole~options"
+      }
+    },
+    "description": "Execute on virole command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      },
+      {
+        "type": {
+          "names": [
+            "Array"
+          ]
+        },
+        "description": "passed arguments",
+        "name": "args"
+      }
+    ],
+    "name": "virole",
+    "longname": "virole",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "virole",
+    "$kind": "method",
+    "$docmaLink": "?api#virole"
   }
 ]

@@ -9,26 +9,30 @@ const rmrole = async (msg, args) => {
     const member = msg.mentions.members.first();
 
     // get role by name
-    let findRole = msg.guild.roles.cache.find(role => role.name === givenRole);
+    let findRole = msg.guild.roles.cache.find(
+        (role) => role.name === givenRole
+    );
 
-    if(member){
-        if(findRole){
+    if (member) {
+        if (findRole) {
             // check if user has this role
-            if(member.roles.cache.has(findRole.id)){
-                try{
-                    if(member.roles.remove(findRole.id)){
-                        return msg.channel.send(`✅ ${givenRole} has been removed from ${member}`);
+            if (member.roles.cache.has(findRole.id)) {
+                try {
+                    if (member.roles.remove(findRole.id)) {
+                        return msg.channel.send(
+                            `✅ ${givenRole} has been removed from ${member}`
+                        );
                     }
-                }catch(error){
+                } catch (error) {
                     return msg.channel.send(`❌ ${error.message}`);
                 }
-            }else{
+            } else {
                 return msg.channel.send(`❌ ${member} doesn't have this role!`);
-                }
-        }else{
+            }
+        } else {
             return msg.channel.send(`❌ Role not found`);
         }
-    }else{
+    } else {
         return msg.channel.send(`❌ User not found`);
     }
 };
