@@ -36,7 +36,7 @@ const virole = async (msg, args) => {
                             return msg.channel.send(`❌ Something went wrong!`);
                         }
                     } else {
-                        return msg.channel.send(`❌ Color must be #hex !`);
+                        return msg.channel.send(`❌ Color must be #hex!`);
                     }
                 } else {
                     return msg.channel.send(`❌ You must set a color value!`);
@@ -195,6 +195,13 @@ const virole = async (msg, args) => {
                     return msg.channel.send(`❌ You must set a name value!`);
                 }
                 break;
+            default:
+                const colorHelp = `color <#hex_color>`,
+                    updateHelp = `update <permission> //admin=777, moderator=755, vip=744, default=500`,
+                    nameHelp = `name <new_role_name>`;
+                return msg.channel.send(
+                    `${colorHelp} \n${updateHelp} \n${nameHelp}`
+                );
         }
     } else {
         return msg.channel.send(`❌ Role not found!`);
