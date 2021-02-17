@@ -426,6 +426,51 @@
     "$docmaLink": "?api#clear"
   },
   {
+    "comment": "/**\n * Execute on decvol command\n * @param {Discord.Message} msg - discord message\n */",
+    "meta": {
+      "range": [
+        93,
+        874
+      ],
+      "filename": "decvol.js",
+      "lineno": 5,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100001924",
+        "name": "decvol",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "undefined": null,
+        "voiceChannel": "decvol~voiceChannel",
+        "percentage": "decvol~percentage",
+        "serverQueue": "decvol~serverQueue",
+        "volume": "decvol~volume"
+      }
+    },
+    "description": "Execute on decvol command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      }
+    ],
+    "name": "decvol",
+    "longname": "decvol",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "decvol",
+    "$kind": "method",
+    "$docmaLink": "?api#decvol"
+  },
+  {
     "comment": "/**\n * Execute on getdatabase command\n * @param {Discord.Message} msg - discord message\n */",
     "meta": {
       "range": [
@@ -437,7 +482,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001924",
+        "id": "astnode100002047",
         "name": "getdatabase",
         "type": "ArrowFunctionExpression"
       },
@@ -478,7 +523,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001962",
+        "id": "astnode100002085",
         "name": "getstreamers",
         "type": "ArrowFunctionExpression"
       },
@@ -532,7 +577,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
       "code": {
-        "id": "astnode100007138",
+        "id": "astnode100007429",
         "name": "getUser",
         "type": "ArrowFunctionExpression"
       },
@@ -562,6 +607,50 @@
     "$docmaLink": "?api#getUser"
   },
   {
+    "comment": "/**\n * Execute on getvol command\n * @param {Discord.Message} msg - discord message\n */",
+    "meta": {
+      "range": [
+        93,
+        816
+      ],
+      "filename": "getvol.js",
+      "lineno": 5,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100002269",
+        "name": "getvol",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "undefined": null,
+        "voiceChannel": "getvol~voiceChannel",
+        "serverQueue": "getvol~serverQueue",
+        "vol": "getvol~vol"
+      }
+    },
+    "description": "Execute on getvol command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      }
+    ],
+    "name": "getvol",
+    "longname": "getvol",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "getvol",
+    "$kind": "method",
+    "$docmaLink": "?api#getvol"
+  },
+  {
     "comment": "/**\n * Execute on help command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
     "meta": {
       "range": [
@@ -573,7 +662,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002230",
+        "id": "astnode100002387",
         "name": "help",
         "type": "ArrowFunctionExpression"
       },
@@ -616,6 +705,50 @@
     "$docmaLink": "?api#help"
   },
   {
+    "comment": "/**\n * Execute on incvol command\n * @param {Discord.Message} msg - discord message\n */",
+    "meta": {
+      "range": [
+        93,
+        818
+      ],
+      "filename": "incvol.js",
+      "lineno": 5,
+      "columnno": 6,
+      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "code": {
+        "id": "astnode100002673",
+        "name": "incvol",
+        "type": "ArrowFunctionExpression"
+      },
+      "vars": {
+        "voiceChannel": "incvol~voiceChannel",
+        "percentage": "incvol~percentage",
+        "serverQueue": "incvol~serverQueue",
+        "volume": "incvol~volume"
+      }
+    },
+    "description": "Execute on incvol command",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Discord.Message"
+          ]
+        },
+        "description": "discord message",
+        "name": "msg"
+      }
+    ],
+    "name": "incvol",
+    "longname": "incvol",
+    "kind": "function",
+    "scope": "global",
+    "async": true,
+    "$longname": "incvol",
+    "$kind": "method",
+    "$docmaLink": "?api#incvol"
+  },
+  {
     "comment": "/**\n * Execute on invite command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
     "meta": {
       "range": [
@@ -627,7 +760,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002516",
+        "id": "astnode100002788",
         "name": "invite",
         "type": "ArrowFunctionExpression"
       },
@@ -679,7 +812,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
       "code": {
-        "id": "astnode100007066",
+        "id": "astnode100007357",
         "name": "isLive",
         "type": "ArrowFunctionExpression"
       },
@@ -720,7 +853,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002621",
+        "id": "astnode100002893",
         "name": "kick",
         "type": "ArrowFunctionExpression"
       },
@@ -801,7 +934,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002676",
+        "id": "astnode100002948",
         "name": "mkcha",
         "type": "ArrowFunctionExpression"
       },
@@ -850,14 +983,14 @@
     "meta": {
       "range": [
         133,
-        1299
+        1454
       ],
       "filename": "move.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002938",
+        "id": "astnode100003210",
         "name": "move",
         "type": "ArrowFunctionExpression"
       },
@@ -910,7 +1043,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003082",
+        "id": "astnode100003373",
         "name": "mute",
         "type": "ArrowFunctionExpression"
       },
@@ -954,7 +1087,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003190",
+        "id": "astnode100003481",
         "name": "mvcha",
         "type": "ArrowFunctionExpression"
       },
@@ -1009,7 +1142,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003394",
+        "id": "astnode100003685",
         "name": "newrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1063,7 +1196,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003647",
+        "id": "astnode100003938",
         "name": "pause",
         "type": "ArrowFunctionExpression"
       },
@@ -1105,7 +1238,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003768",
+        "id": "astnode100004059",
         "name": "pin",
         "type": "ArrowFunctionExpression"
       },
@@ -1155,7 +1288,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003864",
+        "id": "astnode100004155",
         "name": "ping",
         "type": "ArrowFunctionExpression"
       }
@@ -1193,7 +1326,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004061",
+        "id": "astnode100004352",
         "name": "play",
         "type": "ArrowFunctionExpression"
       },
@@ -1251,7 +1384,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003907",
+        "id": "astnode100004198",
         "name": "playAction",
         "type": "ArrowFunctionExpression"
       },
@@ -1311,7 +1444,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004368",
+        "id": "astnode100004659",
         "name": "prune",
         "type": "ArrowFunctionExpression"
       },
@@ -1442,7 +1575,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004462",
+        "id": "astnode100004753",
         "name": "repeat",
         "type": "ArrowFunctionExpression"
       },
@@ -1484,7 +1617,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004569",
+        "id": "astnode100004860",
         "name": "resume",
         "type": "ArrowFunctionExpression"
       },
@@ -1526,7 +1659,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004689",
+        "id": "astnode100004980",
         "name": "rmcha",
         "type": "ArrowFunctionExpression"
       },
@@ -1579,7 +1712,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004791",
+        "id": "astnode100005082",
         "name": "rmrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1632,7 +1765,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004946",
+        "id": "astnode100005237",
         "name": "server",
         "type": "ArrowFunctionExpression"
       }
@@ -1670,7 +1803,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005017",
+        "id": "astnode100005308",
         "name": "short",
         "type": "ArrowFunctionExpression"
       },
@@ -1721,7 +1854,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005086",
+        "id": "astnode100005377",
         "name": "skip",
         "type": "ArrowFunctionExpression"
       },
@@ -1763,7 +1896,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005213",
+        "id": "astnode100005504",
         "name": "song",
         "type": "ArrowFunctionExpression"
       },
@@ -1804,7 +1937,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005305",
+        "id": "astnode100005596",
         "name": "stop",
         "type": "ArrowFunctionExpression"
       },
@@ -1846,7 +1979,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005438",
+        "id": "astnode100005729",
         "name": "unban",
         "type": "ArrowFunctionExpression"
       },
@@ -1897,7 +2030,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005540",
+        "id": "astnode100005831",
         "name": "unmute",
         "type": "ArrowFunctionExpression"
       },
@@ -1941,7 +2074,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005646",
+        "id": "astnode100005937",
         "name": "unpin",
         "type": "ArrowFunctionExpression"
       },
@@ -1991,7 +2124,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005864",
+        "id": "astnode100006155",
         "name": "unvmute",
         "type": "ArrowFunctionExpression"
       },
@@ -2044,7 +2177,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100006003",
+        "id": "astnode100006294",
         "name": "virole",
         "type": "ArrowFunctionExpression"
       },
@@ -2095,14 +2228,14 @@
     "meta": {
       "range": [
         134,
-        599
+        621
       ],
       "filename": "vkick.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100006462",
+        "id": "astnode100006753",
         "name": "vkick",
         "type": "ArrowFunctionExpression"
       },
@@ -2152,7 +2285,7 @@
       "columnno": 6,
       "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
       "code": {
-        "id": "astnode100006544",
+        "id": "astnode100006835",
         "name": "vmute",
         "type": "ArrowFunctionExpression"
       },

@@ -28,7 +28,9 @@ const move = async (msg, args) => {
     }
 
     if (!user.voice.channel) {
-        return msg.channel.send(`❌ Sorry, ${user} not connected to any voice channel now!!`);
+        return msg.channel.send(
+            `❌ Sorry, ${user} not connected to any voice channel now!!`
+        );
     }
 
     // everything is cool! move the member to target channel!
