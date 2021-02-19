@@ -9,12 +9,14 @@ const move = async (msg, args) => {
     let channelName = args[1];
     // if user is not exist stop and display a message.
     if (!user) {
-        return msg.channel.send(`❌ Sorry, We Couldn't find that member.`);
+        return msg.channel.send(
+            `❌ Sorry ${msg.author.toString()}, We Couldn't find that member.`
+        );
     }
     // check if user enter a channel name
     if (channelName == null) {
         return msg.channel.send(
-            `❌ Sorry, You MUST enter the channel name and make sure the type of channel 'voice' !`
+            `❌ Sorry ${msg.author.toString()}, You MUST enter the channel name and make sure the type of channel 'voice' !`
         );
     }
 
@@ -24,7 +26,9 @@ const move = async (msg, args) => {
     );
 
     if (!channel) {
-        return msg.channel.send(`❌ Sorry, We Couldn't find the channel!`);
+        return msg.channel.send(
+            `❌ Sorry ${msg.author.toString()}, We Couldn't find the channel!`
+        );
     }
 
     if (!user.voice.channel) {
@@ -40,7 +44,9 @@ const move = async (msg, args) => {
             `✅ <@${user.id}> has been moved to ${channelName} channel!`
         );
     } else {
-        return msg.channel.send(`❌ Something went wrong!`);
+        return msg.channel.send(
+            `❌ ${msg.author.toString()} Something went wrong!`
+        );
     }
 };
 module.exports = {

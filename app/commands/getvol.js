@@ -8,14 +8,20 @@ const getvol = async (msg) => {
     const voiceChannel = msg.member.voice.channel;
     if (!voiceChannel) {
         return msg.channel.send(
-            `${msg.author.tag} You need to be in a voice channel to decrease volume!`
+            `❌ ${msg.author.tag} You need to be in a voice channel to decrease volume!`
+        );
+    }
+    let clientVoiceConnection = msg.guild.voice.connection;
+    if (!clientVoiceConnection) {
+        return msg.channel.send(
+            `❌ ${msg.author.toString()} Bot must be in voice channel`
         );
     }
     const serverQueue = musicQueue.get(msg.guild.id);
     let vol = serverQueue.connection.dispatcher;
     // display all types of volume
     msg.channel.send(
-        `Current Bot Volume : ${vol.volume * 100},
+        `${msg.author.toString()} Current Bot Volume : ${vol.volume * 100},
             Logarithmic Volume : ${vol.volumeLogarithmic},
             Decibels Volume : ${vol.volumeDecibels},
             Editable Volume : ${vol.volumeEditable}`

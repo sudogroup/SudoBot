@@ -4,6 +4,16 @@
  * @param {Array} args - passed arguments
  */
 const vmute = async (msg, args) => {
+    // get the user.
+    const user = msg.mentions.members.first();
+    if (!user.voice.channel) {
+        return msg.channel.send(
+            `❌ ${msg.author.toString()} Given user not in any voice channel.`
+        );
+    }
+    // parse time, if you don't specify the time or enter any unwanted information that will convert to 10second
+    let time = parseInt(args[1]);
+
     let defaultTimeToUnmutedUser = 600000; // 10m
     // get all rules
     const roles = new Map();
@@ -13,10 +23,6 @@ const vmute = async (msg, args) => {
             new Object({ object: role, name: role.name, id: role.id })
         )
     );
-    // get the user.
-    const user = msg.mentions.members.first();
-    // parse time, if you don't specify the time or enter any unwanted information that will convert to 10second
-    let time = parseInt(args[1]);
     if (time == null || isNaN(time)) {
         // you can change the time from here.
         time = defaultTimeToUnmutedUser;

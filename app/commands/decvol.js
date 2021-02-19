@@ -9,7 +9,13 @@ const decvol = async (msg) => {
     const voiceChannel = msg.member.voice.channel;
     if (!voiceChannel) {
         return msg.channel.send(
-            `${msg.author.tag} You need to be in a voice channel to decrease volume!`
+            `${msg.author.toString()} You need to be in a voice channel to decrease volume!`
+        );
+    }
+    let clientVoiceConnection = msg.guild.voice.connection;
+    if (!clientVoiceConnection) {
+        return msg.channel.send(
+            `❌ ${msg.author.toString()} Bot must be in voice channel`
         );
     }
 
@@ -19,9 +25,11 @@ const decvol = async (msg) => {
     let volume = serverQueue.connection.dispatcher.volume - percentage;
 
     if (serverQueue.connection.dispatcher.setVolume(volume)) {
-        msg.channel.send(`Voice has been lowered.`);
+        msg.channel.send(`${msg.author.toString()} Voice has been lowered.`);
     } else {
-        msg.channel.send(`Voice has not been lowered, please try again!`);
+        msg.channel.send(
+            `${msg.author.toString()} Voice has not been lowered, please try again!`
+        );
     }
 };
 

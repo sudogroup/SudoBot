@@ -7,8 +7,13 @@ const incvol = async (msg) => {
     const voiceChannel = msg.member.voice.channel;
     if (!voiceChannel) {
         return msg.channel.send(
-            `${msg.author.tag} You need to be in a voice channel to decrease volume!`
+            `${msg.author.toString()} You need to be in a voice channel to decrease volume!`
         );
+    }
+
+    let clientVoiceConnection = msg.guild.voice.connection;
+    if (!clientVoiceConnection) {
+        return msg.channel.send(`❌ Bot must be in voice channel`);
     }
 
     let percentage = 25 / 100; // if you want to use args just adjust the "25" to argument variable.
@@ -17,9 +22,11 @@ const incvol = async (msg) => {
     let volume = serverQueue.connection.dispatcher.volume + percentage;
 
     if (serverQueue.connection.dispatcher.setVolume(volume)) {
-        msg.channel.send(`Voice has been increased.`);
+        msg.channel.send(`${msg.author.toString()} Voice has been increased.`);
     } else {
-        msg.channel.send(`Voice has not been increased, please try again!`);
+        msg.channel.send(
+            `${msg.author.toString()} Voice has not been increased, please try again!`
+        );
     }
 };
 

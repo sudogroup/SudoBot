@@ -30,7 +30,7 @@ const playAction = (guild, song, msg) => {
     dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
     if (dispatcher) {
-        console.log(`Here, at ${msg.channel.name}`);
+        console.log(`Music play at ${msg.channel.name}`);
         msg.channel.send(
             `${msg.author.toString()} playing (${
                 (guild, serverQueue.songs[0].title)
@@ -47,9 +47,6 @@ const playAction = (guild, song, msg) => {
 const play = async (msg, args) => {
     // get parameters
     const url = args[0]; // only used by one person
-    console.log(url);
-    console.log(msg.author.tag);
-
     const serverQueue = musicQueue.get(msg.guild.id);
 
     // get the user voice channel then handle all cases like if bot has permission to join this voice channel..etc
@@ -84,15 +81,12 @@ const play = async (msg, args) => {
             loop: false,
         };
         musicQueue.set(msg.guild.id, queueConstract);
-        console.log("music", musicQueue);
         queueConstract.songs.push(song);
 
         try {
             var connection = await voiceChannel.join();
             queueConstract.connection = connection;
             console.log(queueConstract.songs[0]);
-            console.log(musicQueue);
-
             playAction(msg.guild, queueConstract.songs[0], msg);
         } catch (error) {
             console.error(
