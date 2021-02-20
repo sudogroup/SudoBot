@@ -4,6 +4,13 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v2
+            - name: Test using Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "12"
+            - run: yarn install
+            - name: Create config.json
             - uses: DamianReeves/write-file-action
               with:
                   path: ${{ env.home}}/config.json
@@ -12,12 +19,6 @@ jobs:
                           "BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"
                       }`
                   write-mode: append
-            - uses: actions/checkout@v2
-            - name: Test using Node.js
-              uses: actions/setup-node@v1
-              with:
-                  node-version: "12"
-            - run: yarn install
             - run: yarn test:ci
             - name: Tests ✅
               if: ${{ success() }}
