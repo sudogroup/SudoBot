@@ -1,0 +1,10 @@
+uses: DamianReeves/write-file-action
+with:
+    path: ${{ env.home}}/config.json
+    contents: |
+        {
+            "BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}",
+            "TWITCH_TOKEN": "${{ secrets.TWITCH_TOKEN }}",
+            "DISCORD_TOKEN": "${{ secrets.DISCORD_TOKEN }}"
+        }
+    write-mode: append

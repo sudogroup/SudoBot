@@ -4,6 +4,14 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            - uses: DamianReeves/write-file-action
+              with:
+                  path: ${{ env.home}}/config.json
+                  contents: |
+                      {
+                          "BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"
+                      }
+                  write-mode: append
             - uses: actions/checkout@v2
             - name: Test using Node.js
               uses: actions/setup-node@v1
@@ -29,3 +37,7 @@ jobs:
                     "description": "Tests failed",
                     "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
                   }'
+            - name: Remove File
+              uses: JesseTG/rm@v1.0.2
+              with:
+                  path: ${{ env.home}}/config.json
