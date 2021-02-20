@@ -8,9 +8,9 @@ jobs:
               with:
                   path: ${{ env.home}}/config.json
                   contents: |
-                      {
+                      `{
                           "BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"
-                      }
+                      }`
                   write-mode: append
             - uses: actions/checkout@v2
             - name: Test using Node.js
