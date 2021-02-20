@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const mvcha = async (msg, args) => {
+const mvcha = async (msg, args, test = true) => {
     // get parameters
     const channel_name = args[0];
     const new_channel_name = args[1];
