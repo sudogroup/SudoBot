@@ -44,7 +44,7 @@
     "meta": {
       "range": [
         139,
-        1143
+        1179
       ],
       "filename": "addproject.js",
       "lineno": 6,
@@ -104,7 +104,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001148",
+        "id": "astnode100001158",
         "name": "addrole",
         "type": "ArrowFunctionExpression"
       },
@@ -157,7 +157,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001311",
+        "id": "astnode100001321",
         "name": "adds",
         "type": "ArrowFunctionExpression"
       },
@@ -205,14 +205,14 @@
     "meta": {
       "range": [
         140,
-        1488
+        1535
       ],
       "filename": "addstreamer.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001426",
+        "id": "astnode100001436",
         "name": "addstreamer",
         "type": "ArrowFunctionExpression"
       },
@@ -266,7 +266,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001620",
+        "id": "astnode100001637",
         "name": "args",
         "type": "ArrowFunctionExpression"
       }
@@ -313,7 +313,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001671",
+        "id": "astnode100001688",
         "name": "avatar",
         "type": "ArrowFunctionExpression"
       },
@@ -355,7 +355,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001767",
+        "id": "astnode100001784",
         "name": "ban",
         "type": "ArrowFunctionExpression"
       },
@@ -396,7 +396,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001822",
+        "id": "astnode100001839",
         "name": "clear",
         "type": "ArrowFunctionExpression"
       },
@@ -437,7 +437,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001931",
+        "id": "astnode100001948",
         "name": "getdatabase",
         "type": "ArrowFunctionExpression"
       },
@@ -471,14 +471,14 @@
     "meta": {
       "range": [
         141,
-        1467
+        1514
       ],
       "filename": "getstreamers.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001969",
+        "id": "astnode100001986",
         "name": "getstreamers",
         "type": "ArrowFunctionExpression"
       },
@@ -532,7 +532,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
       "code": {
-        "id": "astnode100006518",
+        "id": "astnode100006526",
         "name": "getUser",
         "type": "ArrowFunctionExpression"
       },
@@ -573,7 +573,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002161",
+        "id": "astnode100002185",
         "name": "help",
         "type": "ArrowFunctionExpression"
       },
@@ -627,7 +627,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002447",
+        "id": "astnode100002471",
         "name": "invite",
         "type": "ArrowFunctionExpression"
       },
@@ -679,7 +679,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
       "code": {
-        "id": "astnode100006446",
+        "id": "astnode100006454",
         "name": "isLive",
         "type": "ArrowFunctionExpression"
       },
@@ -720,7 +720,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002552",
+        "id": "astnode100002576",
         "name": "kick",
         "type": "ArrowFunctionExpression"
       },
@@ -794,14 +794,14 @@
     "meta": {
       "range": [
         134,
-        2617
+        2630
       ],
       "filename": "mkcha.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002607",
+        "id": "astnode100002631",
         "name": "mkcha",
         "type": "ArrowFunctionExpression"
       },
@@ -857,7 +857,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002869",
+        "id": "astnode100002896",
         "name": "mute",
         "type": "ArrowFunctionExpression"
       },
@@ -894,14 +894,14 @@
     "meta": {
       "range": [
         134,
-        2195
+        2208
       ],
       "filename": "mvcha.js",
       "lineno": 6,
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002977",
+        "id": "astnode100003004",
         "name": "mvcha",
         "type": "ArrowFunctionExpression"
       },
@@ -956,7 +956,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003181",
+        "id": "astnode100003211",
         "name": "newrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1010,7 +1010,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003434",
+        "id": "astnode100003464",
         "name": "pause",
         "type": "ArrowFunctionExpression"
       },
@@ -1052,7 +1052,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003555",
+        "id": "astnode100003585",
         "name": "pin",
         "type": "ArrowFunctionExpression"
       },
@@ -1102,7 +1102,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003651",
+        "id": "astnode100003681",
         "name": "ping",
         "type": "ArrowFunctionExpression"
       }
@@ -1140,7 +1140,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003848",
+        "id": "astnode100003878",
         "name": "play",
         "type": "ArrowFunctionExpression"
       },
@@ -1198,7 +1198,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003694",
+        "id": "astnode100003724",
         "name": "playAction",
         "type": "ArrowFunctionExpression"
       },
@@ -1258,7 +1258,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004155",
+        "id": "astnode100004185",
         "name": "prune",
         "type": "ArrowFunctionExpression"
       },
@@ -1389,7 +1389,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004249",
+        "id": "astnode100004279",
         "name": "repeat",
         "type": "ArrowFunctionExpression"
       },
@@ -1431,7 +1431,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004356",
+        "id": "astnode100004386",
         "name": "resume",
         "type": "ArrowFunctionExpression"
       },
@@ -1473,7 +1473,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004476",
+        "id": "astnode100004506",
         "name": "rmcha",
         "type": "ArrowFunctionExpression"
       },
@@ -1526,7 +1526,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004578",
+        "id": "astnode100004608",
         "name": "rmrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1579,7 +1579,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004733",
+        "id": "astnode100004763",
         "name": "server",
         "type": "ArrowFunctionExpression"
       }
@@ -1617,7 +1617,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004804",
+        "id": "astnode100004834",
         "name": "short",
         "type": "ArrowFunctionExpression"
       },
@@ -1668,7 +1668,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004873",
+        "id": "astnode100004903",
         "name": "skip",
         "type": "ArrowFunctionExpression"
       },
@@ -1710,7 +1710,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005000",
+        "id": "astnode100005030",
         "name": "song",
         "type": "ArrowFunctionExpression"
       },
@@ -1751,7 +1751,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005092",
+        "id": "astnode100005122",
         "name": "stop",
         "type": "ArrowFunctionExpression"
       },
@@ -1793,7 +1793,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005225",
+        "id": "astnode100005255",
         "name": "unban",
         "type": "ArrowFunctionExpression"
       },
@@ -1844,7 +1844,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005327",
+        "id": "astnode100005357",
         "name": "unmute",
         "type": "ArrowFunctionExpression"
       },
@@ -1888,7 +1888,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005433",
+        "id": "astnode100005463",
         "name": "unpin",
         "type": "ArrowFunctionExpression"
       },
@@ -1938,7 +1938,7 @@
       "columnno": 6,
       "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005651",
+        "id": "astnode100005681",
         "name": "virole",
         "type": "ArrowFunctionExpression"
       },

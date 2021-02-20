@@ -8,7 +8,8 @@
         "dep": "pm2 start app/index.js",
         "docma": "./node_modules/.bin/docma -c docma.json",
         "serve": "./node_modules/.bin/docma serve docs -p 8080",
-        "test": "jest",
+        "test": "jest --watch",
+        "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'",
         "stop": "pm2 stop app/index.js"
     },
     "author": "",

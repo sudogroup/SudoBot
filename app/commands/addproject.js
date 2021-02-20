@@ -26,7 +26,6 @@ const addproject = async (msg, args, test = true) => {
 
     // get parameters
     const project = args[0];
-
     // create the new channel
     msg.guild.channels.create(project, {
         parent: channels.get("/projects").object,
