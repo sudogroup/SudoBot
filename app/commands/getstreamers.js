@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const getstreamers = async (msg, args) => {
+const getstreamers = async (msg, args, test = true) => {
     // get all roles and channels
     const roles = new Map(),
         channels = new Map();
@@ -41,10 +41,11 @@ const getstreamers = async (msg, args) => {
     msg.channel.send(
         `A new Twitch Streamer channel (${twitch_username}) channel was created for ${discord_username} under /STREAMERS`
     );
-
-    await db.runAsync(
-        `INSERT INTO streamer (streamerDiscordUsername, streamerTwitchUsername, streamerStatus, streamerLastLive) VALUES (${twitch_username},${discord_username},o,-1)`
-    );
+    if (!test) {
+        await db.runAsync(
+            `INSERT INTO streamer (streamerDiscordUsername, streamerTwitchUsername, streamerStatus, streamerLastLive) VALUES (${twitch_username},${discord_username},o,-1)`
+        );
+    }
 };
 module.exports = {
     name: "getstreamers",

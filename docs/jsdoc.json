@@ -9,7 +9,7 @@
       "filename": "addembedding.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
         "id": "astnode100000953",
         "name": "addembedding",
@@ -44,12 +44,12 @@
     "meta": {
       "range": [
         139,
-        1095
+        1142
       ],
       "filename": "addproject.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
         "id": "astnode100000994",
         "name": "addproject",
@@ -102,9 +102,9 @@
       "filename": "addrole.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001141",
+        "id": "astnode100001148",
         "name": "addrole",
         "type": "ArrowFunctionExpression"
       },
@@ -155,9 +155,9 @@
       "filename": "adds.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001304",
+        "id": "astnode100001311",
         "name": "adds",
         "type": "ArrowFunctionExpression"
       },
@@ -205,14 +205,14 @@
     "meta": {
       "range": [
         140,
-        1488
+        1535
       ],
       "filename": "addstreamer.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001419",
+        "id": "astnode100001426",
         "name": "addstreamer",
         "type": "ArrowFunctionExpression"
       },
@@ -264,9 +264,9 @@
       "filename": "args.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001613",
+        "id": "astnode100001627",
         "name": "args",
         "type": "ArrowFunctionExpression"
       }
@@ -311,9 +311,9 @@
       "filename": "avatar.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001664",
+        "id": "astnode100001678",
         "name": "avatar",
         "type": "ArrowFunctionExpression"
       },
@@ -353,9 +353,9 @@
       "filename": "ban.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001760",
+        "id": "astnode100001774",
         "name": "ban",
         "type": "ArrowFunctionExpression"
       },
@@ -394,9 +394,9 @@
       "filename": "clear.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001815",
+        "id": "astnode100001829",
         "name": "clear",
         "type": "ArrowFunctionExpression"
       },
@@ -435,9 +435,9 @@
       "filename": "getdatabase.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001924",
+        "id": "astnode100001938",
         "name": "getdatabase",
         "type": "ArrowFunctionExpression"
       },
@@ -471,14 +471,14 @@
     "meta": {
       "range": [
         141,
-        1467
+        1514
       ],
       "filename": "getstreamers.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100001962",
+        "id": "astnode100001976",
         "name": "getstreamers",
         "type": "ArrowFunctionExpression"
       },
@@ -530,9 +530,9 @@
       "filename": "Twitch.js",
       "lineno": 31,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
       "code": {
-        "id": "astnode100006460",
+        "id": "astnode100006517",
         "name": "getUser",
         "type": "ArrowFunctionExpression"
       },
@@ -571,9 +571,9 @@
       "filename": "help.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002154",
+        "id": "astnode100002175",
         "name": "help",
         "type": "ArrowFunctionExpression"
       },
@@ -625,9 +625,9 @@
       "filename": "invite.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002440",
+        "id": "astnode100002461",
         "name": "invite",
         "type": "ArrowFunctionExpression"
       },
@@ -677,9 +677,9 @@
       "filename": "Twitch.js",
       "lineno": 8,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/utils",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/utils",
       "code": {
-        "id": "astnode100006388",
+        "id": "astnode100006445",
         "name": "isLive",
         "type": "ArrowFunctionExpression"
       },
@@ -718,9 +718,9 @@
       "filename": "kick.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002545",
+        "id": "astnode100002566",
         "name": "kick",
         "type": "ArrowFunctionExpression"
       },
@@ -759,7 +759,7 @@
       "filename": "message.js",
       "lineno": 9,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
       "code": {
         "id": "astnode100000022",
         "name": "message",
@@ -794,14 +794,14 @@
     "meta": {
       "range": [
         134,
-        2617
+        2630
       ],
       "filename": "mkcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002600",
+        "id": "astnode100002621",
         "name": "mkcha",
         "type": "ArrowFunctionExpression"
       },
@@ -855,9 +855,9 @@
       "filename": "mute.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002862",
+        "id": "astnode100002886",
         "name": "mute",
         "type": "ArrowFunctionExpression"
       },
@@ -894,14 +894,14 @@
     "meta": {
       "range": [
         134,
-        2195
+        2208
       ],
       "filename": "mvcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100002970",
+        "id": "astnode100002994",
         "name": "mvcha",
         "type": "ArrowFunctionExpression"
       },
@@ -954,9 +954,9 @@
       "filename": "newrole.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003174",
+        "id": "astnode100003201",
         "name": "newrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1008,9 +1008,9 @@
       "filename": "pause.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003427",
+        "id": "astnode100003454",
         "name": "pause",
         "type": "ArrowFunctionExpression"
       },
@@ -1050,9 +1050,9 @@
       "filename": "pin.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003548",
+        "id": "astnode100003575",
         "name": "pin",
         "type": "ArrowFunctionExpression"
       },
@@ -1095,14 +1095,14 @@
     "meta": {
       "range": [
         91,
-        147
+        153
       ],
       "filename": "ping.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003644",
+        "id": "astnode100003671",
         "name": "ping",
         "type": "ArrowFunctionExpression"
       }
@@ -1138,9 +1138,9 @@
       "filename": "play.js",
       "lineno": 47,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003841",
+        "id": "astnode100003869",
         "name": "play",
         "type": "ArrowFunctionExpression"
       },
@@ -1196,9 +1196,9 @@
       "filename": "play.js",
       "lineno": 10,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100003687",
+        "id": "astnode100003715",
         "name": "playAction",
         "type": "ArrowFunctionExpression"
       },
@@ -1256,9 +1256,9 @@
       "filename": "prune.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004148",
+        "id": "astnode100004176",
         "name": "prune",
         "type": "ArrowFunctionExpression"
       },
@@ -1307,7 +1307,7 @@
       "filename": "reactions.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
       "code": {
         "id": "astnode100000590",
         "name": "reactions",
@@ -1347,7 +1347,7 @@
       "filename": "ready.js",
       "lineno": 7,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/actions",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/actions",
       "code": {
         "id": "astnode100000887",
         "name": "ready",
@@ -1387,9 +1387,9 @@
       "filename": "repeat.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004242",
+        "id": "astnode100004270",
         "name": "repeat",
         "type": "ArrowFunctionExpression"
       },
@@ -1429,9 +1429,9 @@
       "filename": "resume.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004349",
+        "id": "astnode100004377",
         "name": "resume",
         "type": "ArrowFunctionExpression"
       },
@@ -1471,9 +1471,9 @@
       "filename": "rmcha.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004469",
+        "id": "astnode100004497",
         "name": "rmcha",
         "type": "ArrowFunctionExpression"
       },
@@ -1524,9 +1524,9 @@
       "filename": "rmrole.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004571",
+        "id": "astnode100004599",
         "name": "rmrole",
         "type": "ArrowFunctionExpression"
       },
@@ -1577,9 +1577,9 @@
       "filename": "server.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004726",
+        "id": "astnode100004754",
         "name": "server",
         "type": "ArrowFunctionExpression"
       }
@@ -1615,9 +1615,9 @@
       "filename": "short.js",
       "lineno": 10,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004797",
+        "id": "astnode100004825",
         "name": "short",
         "type": "ArrowFunctionExpression"
       },
@@ -1666,9 +1666,9 @@
       "filename": "skip.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004866",
+        "id": "astnode100004894",
         "name": "skip",
         "type": "ArrowFunctionExpression"
       },
@@ -1708,9 +1708,9 @@
       "filename": "song.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100004993",
+        "id": "astnode100005021",
         "name": "song",
         "type": "ArrowFunctionExpression"
       },
@@ -1749,9 +1749,9 @@
       "filename": "stop.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005085",
+        "id": "astnode100005113",
         "name": "stop",
         "type": "ArrowFunctionExpression"
       },
@@ -1791,9 +1791,9 @@
       "filename": "unban.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005218",
+        "id": "astnode100005246",
         "name": "unban",
         "type": "ArrowFunctionExpression"
       },
@@ -1842,9 +1842,9 @@
       "filename": "unmute.js",
       "lineno": 5,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005320",
+        "id": "astnode100005348",
         "name": "unmute",
         "type": "ArrowFunctionExpression"
       },
@@ -1886,9 +1886,9 @@
       "filename": "unpin.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005426",
+        "id": "astnode100005454",
         "name": "unpin",
         "type": "ArrowFunctionExpression"
       },
@@ -1931,14 +1931,14 @@
     "meta": {
       "range": [
         135,
-        8684
+        9048
       ],
       "filename": "virole.js",
       "lineno": 6,
       "columnno": 6,
-      "path": "/home/mutlaq/Projects/sudoGroup/SudoBot/app/commands",
+      "path": "/home/alotaima/Projects/side/SudoBot/app/commands",
       "code": {
-        "id": "astnode100005644",
+        "id": "astnode100005672",
         "name": "virole",
         "type": "ArrowFunctionExpression"
       },
@@ -1948,7 +1948,10 @@
         "update": "virole~update",
         "findRole": "virole~findRole",
         "": null,
-        "options": "virole~options"
+        "options": "virole~options",
+        "colorHelp": "virole~colorHelp",
+        "updateHelp": "virole~updateHelp",
+        "nameHelp": "virole~nameHelp"
       }
     },
     "description": "Execute on virole command",

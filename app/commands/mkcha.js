@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const mkcha = async (msg, args) => {
+const mkcha = async (msg, args, test = true) => {
     const channels = new Map();
     const categories = [];
 
