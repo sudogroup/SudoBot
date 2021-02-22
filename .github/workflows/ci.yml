@@ -9,7 +9,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [12.x]
-                platform: [ubuntu-latest] #[ubuntu-latest, windows-latest, macos-latest]
+                platform: [ubuntu-latest, windows-latest, macos-latest]
         # Build OS
         runs-on: ${{ matrix.platform }}
         # CI
