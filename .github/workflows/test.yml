@@ -1,0 +1,57 @@
+# credits:
+# - CI with Jest: https://joelhooks.com/jest-and-github-actions
+name: Tests CI
+on: pull_request
+jobs:
+    build:
+        # setup global configurations
+        strategy:
+            matrix:
+                node-version: [12.x]
+                platform: [ubuntu-latest] #[ubuntu-latest, windows-latest, macos-latest]
+        # Build OS
+        runs-on: ${{ matrix.platform }}
+        # CI
+        steps:
+            - uses: actions/checkout@v2
+            # select nodejs v12
+            - name: Test using Node.js v${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            # install packages
+            - run: npm i
+            # setup jest
+            - uses: mattallty/jest-github-action@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            # run tests
+            - name: Run tests
+              run: npm run test:ci
+            # conditions with test fails or succeeds
+            - name: Tests ✅
+              if: ${{ success() }}
+              run: |
+                  curl --request POST           --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'           --header 'content-type: application/json'           --data '{
+                    "context": "tests",
+                    "state": "success",
+                    "description": "Tests passed",
+                    "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }'
+            - name: Tests 🚨
+              if: ${{ failure() }}
+              run: |
+                  curl --request POST           --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'           --header 'content-type: application/json'           --data '{
+                    "context": "tests",
+                    "state": "failure",
+                    "description": "Tests failed",
+                    "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }'
+            # Code Coverage
+            - name: TestCoverage
+              id: testCovergae
+              uses: anuraag016/Jest-Coverage-Diff@master
+              with:
+                  fullCoverageDiff: false // defaults to false, if made true whole coverage report is commented with the diff
+                  runCommand: 'npx jest --collectCoverageFrom=''["src/**/*.{js,jsx,ts,tsx}"]'' --coverage --collectCoverage=true --coverageDirectory=''./'' --coverageReporters=''json-summary'' --forceExit --detectOpenHandles test/.*test.*'
+                  delta: 0.5

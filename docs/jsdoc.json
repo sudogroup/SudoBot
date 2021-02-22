@@ -524,8 +524,8 @@
     "comment": "/**\n * Get User\n * @param {String} username - twitch username\n */",
     "meta": {
       "range": [
-        790,
-        1199
+        792,
+        1201
       ],
       "filename": "Twitch.js",
       "lineno": 31,
@@ -565,8 +565,8 @@
     "comment": "/**\n * Execute on help command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
     "meta": {
       "range": [
-        175,
-        1791
+        177,
+        1793
       ],
       "filename": "help.js",
       "lineno": 7,
@@ -671,8 +671,8 @@
     "comment": "/**\n * Is Live\n * @param {Twitch.User} user - twitch user\n */",
     "meta": {
       "range": [
-        152,
-        716
+        154,
+        718
       ],
       "filename": "Twitch.js",
       "lineno": 8,
@@ -753,8 +753,8 @@
     "comment": "/**\n * Execute on message events\n * @param {Discord.Client} client - discord client\n */",
     "meta": {
       "range": [
-        216,
-        5280
+        218,
+        5282
       ],
       "filename": "message.js",
       "lineno": 9,
@@ -1609,8 +1609,8 @@
     "comment": "/**\n * Execute on short command\n * @param {Discord.Message} msg - discord message\n * @param {Array} args - passed arguments\n */",
     "meta": {
       "range": [
-        326,
-        596
+        328,
+        598
       ],
       "filename": "short.js",
       "lineno": 10,

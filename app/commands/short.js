@@ -1,4 +1,4 @@
-const { CONFIG_PATH } = require("../../.env"),
+const { CONFIG_PATH } = require("../../config"),
     { BITLY_TOKEN } = require(`../../${CONFIG_PATH}`),
     BitlyClient = require("bitly").BitlyClient,
     bitly = new BitlyClient(BITLY_TOKEN);
