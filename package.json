@@ -4,12 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "./node_modules/.bin/docma -c docma.json && prettier --write app/* --tab-width 4 && nodemon app/index.js",
+        "dev": "prettier --write app/* --tab-width 4 && nodemon app/index.js",
         "dep": "pm2 start app/index.js",
-        "docma": "./node_modules/.bin/docma -c docma.json",
+        "docs": "./node_modules/.bin/docma -c docma.json && prettier --write app/* --tab-width 4",
         "serve": "./node_modules/.bin/docma serve docs -p 8080",
         "test": "jest --watch",
-        "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'",
+        "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter' --coverage && codecov",
         "stop": "pm2 stop app/index.js"
     },
     "author": "",
@@ -28,6 +28,7 @@
         "ytdl-core": "^4.4.5"
     },
     "devDependencies": {
+        "codecov": "^3.8.1",
         "docma": "^3.2.2",
         "jest": "^26.6.3",
         "nodemon": "^2.0.7",
