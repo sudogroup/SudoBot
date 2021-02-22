@@ -51,13 +51,14 @@ jobs:
                     "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
                   }'
             # Code Coverage
-            - name: TestCoverage
-              id: testCovergae
-              uses: anuraag016/Jest-Coverage-Diff@master
+            - name: Code Coverage
+              uses: codecov/codecov-action@v1
               with:
-                  fullCoverageDiff: true
-                  runCommand: 'npx jest --collectCoverageFrom=''["src/**/*.{js,jsx,ts,tsx}"]'' --coverage --collectCoverage=true --coverageDirectory=''./'' --coverageReporters=''json-summary'' --forceExit --detectOpenHandles test/.*test.*'
-                  delta: 0.5
+                  token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+                  flags: unittests # optional
+                  name: codecov-umbrella # optional
+                  fail_ci_if_error: true # optional (default = false)
+                  verbose: true # optional (default = false)
             # remove the config file
             - name: Remove Config File
               uses: JesseTG/rm@v1.0.2
