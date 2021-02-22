@@ -25,9 +25,9 @@ jobs:
             # create a config file
             - name: Create Config File
               uses: "finnp/create-file-action@master"
-                env:
-                    FILE_NAME: "config.json"
-                    FILE_DATA: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"}'
+              env:
+                  FILE_NAME: "config.json"
+                  FILE_DATA: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"}'
             # setup jest
             - uses: mattallty/jest-github-action@v1
               env:
@@ -66,4 +66,4 @@ jobs:
             - name: Remove Config File
               uses: JesseTG/rm@v1.0.2
               with:
-                path: 'config.json'
+                  path: "config.json"
