@@ -20,7 +20,14 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
             # install packages
-            - run: npm i
+            - name: Install Packages
+              run: npm i
+            # create a config file
+            - name: Create Config File
+              uses: "finnp/create-file-action@master"
+                env:
+                    FILE_NAME: "config.json"
+                    FILE_DATA: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}"}'
             # setup jest
             - uses: mattallty/jest-github-action@v1
               env:
@@ -55,3 +62,8 @@ jobs:
                   fullCoverageDiff: false // defaults to false, if made true whole coverage report is commented with the diff
                   runCommand: 'npx jest --collectCoverageFrom=''["src/**/*.{js,jsx,ts,tsx}"]'' --coverage --collectCoverage=true --coverageDirectory=''./'' --coverageReporters=''json-summary'' --forceExit --detectOpenHandles test/.*test.*'
                   delta: 0.5
+            # remove the config file
+            - name: Remove Config File
+              uses: JesseTG/rm@v1.0.2
+              with:
+                path: 'config.json'
