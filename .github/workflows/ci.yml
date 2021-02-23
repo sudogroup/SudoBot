@@ -61,26 +61,3 @@ jobs:
               uses: JesseTG/rm@v1.0.2
               with:
                   path: "config.json"
-    doc:
-        name: Documentation
-        # setup global configurations
-        strategy:
-            matrix:
-                node-version: [12.x]
-                platform: [ubuntu-latest]
-        # Build OS
-        runs-on: ${{ matrix.platform }}
-        # CI
-        steps:
-            - uses: actions/checkout@v2
-            # select nodejs v12
-            - name: Build Docs using Node.js v${{ matrix.node-version }}
-              uses: actions/setup-node@v1
-              with:
-                  node-version: ${{ matrix.node-version }}
-            # install packages
-            - name: Install Packages
-              run: npm i
-            # build doc
-            - name: Build docs
-              run: npm run docs
