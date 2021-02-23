@@ -1,0 +1,86 @@
+# credits:
+# - CI with Jest: https://joelhooks.com/jest-and-github-actions
+name: CI
+on: pull_request
+jobs:
+    test:
+        name: Test
+        # setup global configurations
+        strategy:
+            matrix:
+                node-version: [12.x]
+                platform: [ubuntu-latest] #[ubuntu-latest, windows-latest, macos-latest]
+        # Build OS
+        runs-on: ${{ matrix.platform }}
+        # CI
+        steps:
+            - uses: actions/checkout@v2
+            # select nodejs v12
+            - name: Test using Node.js v${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            # install packages
+            - name: Install Packages
+              run: npm i
+            # create a config file
+            - name: Create Config File
+              uses: "finnp/create-file-action@master"
+              env:
+                  FILE_NAME: "config.json"
+                  FILE_DATA: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}","TWITCH_TOKEN": "${{ secrets.TWITCH_TOKEN }}","DISCORD_TOKEN": "${{ secrets.DISCORD_TOKEN }}"}'
+            # run tests
+            - name: Run tests
+              run: npm run test:ci
+            # conditions with test fails or succeeds
+            - name: Tests ✅
+              if: ${{ success() }}
+              run: |
+                  curl --request POST           --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'           --header 'content-type: application/json'           --data '{
+                    "context": "tests",
+                    "state": "success",
+                    "description": "Tests passed",
+                    "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }'
+            - name: Tests 🚨
+              if: ${{ failure() }}
+              run: |
+                  curl --request POST           --url https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'           --header 'content-type: application/json'           --data '{
+                    "context": "tests",
+                    "state": "failure",
+                    "description": "Tests failed",
+                    "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }'
+            # Code Coverage
+            - name: Code Coverage
+              uses: codecov/codecov-action@v1
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+            # remove the config file
+            - name: Remove Config File
+              uses: JesseTG/rm@v1.0.2
+              with:
+                  path: "config.json"
+    doc:
+        name: Documentation
+        # setup global configurations
+        strategy:
+            matrix:
+                node-version: [12.x]
+                platform: [ubuntu-latest]
+        # Build OS
+        runs-on: ${{ matrix.platform }}
+        # CI
+        steps:
+            - uses: actions/checkout@v2
+            # select nodejs v12
+            - name: Build Docs using Node.js v${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            # install packages
+            - name: Install Packages
+              run: npm i
+            # build doc
+            - name: Build docs
+              run: npm run docs

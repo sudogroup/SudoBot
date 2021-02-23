@@ -1,4 +1,4 @@
-const { TWITCH_TOKEN } = require("../../.env"),
+const { TWITCH_TOKEN } = require("../../config"),
     fetch = require("node-fetch");
 
 /**
