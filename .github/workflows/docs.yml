@@ -1,6 +1,4 @@
-# credits:
-# - CI with Jest: https://joelhooks.com/jest-and-github-actions
-name: CI
+name: Building Docs
 on:
     push:
         branches:
@@ -29,12 +27,14 @@ jobs:
             # build doc
             - name: Build docs
               run: npm run docs
+            # add and commit
             - name: Commit docs
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
                   git add -f docs
                   git commit -m "Generating docs"
+            # push action
             - name: Push changes
               uses: ad-m/github-push-action@master
               with:
