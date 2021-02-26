@@ -26,8 +26,8 @@ jobs:
             # create a config file
             - name: Create Config File
               uses: "DamianReeves/write-file-action@v1.0"
-              env:
-                  path: "./config.json"
+              with:
+                  path: ./config.json
                   contents: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}","TWITCH_TOKEN": "${{ secrets.TWITCH_TOKEN }}","DISCORD_TOKEN": "${{ secrets.DISCORD_TOKEN }}"}'
                   write-mode: overwrite
             # run tests
