@@ -35,6 +35,7 @@ jobs:
               run: npm run test:ci
             # conditions with test fails or succeeds
             - name: Tests ✅
+              shell: bash
               if: ${{ success() }}
               run: |
                   curl \
@@ -50,6 +51,7 @@ jobs:
                     https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}
             - name: Tests 🚨
               if: ${{ failure() }}
+              shell: bash
               run: |
                   curl \
                     -X POST \
