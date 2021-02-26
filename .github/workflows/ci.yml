@@ -22,13 +22,14 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             # install packages
             - name: Install Packages
-              run: npm run install
+              run: npm i
             # create a config file
             - name: Create Config File
-              uses: "finnp/create-file-action@master"
+              uses: "DamianReeves/write-file-action@v1.0"
               env:
-                  FILE_NAME: "config.json"
-                  FILE_DATA: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}","TWITCH_TOKEN": "${{ secrets.TWITCH_TOKEN }}","DISCORD_TOKEN": "${{ secrets.DISCORD_TOKEN }}"}'
+                  path: "./config.json"
+                  contents: '{"BITLY_TOKEN": "${{ secrets.BITLY_TOKEN }}","TWITCH_TOKEN": "${{ secrets.TWITCH_TOKEN }}","DISCORD_TOKEN": "${{ secrets.DISCORD_TOKEN }}"}'
+                  write-mode: overwrite
             # run tests
             - name: Run tests
               run: npm run test:ci
