@@ -23,7 +23,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             # install packages
             - name: Install Packages
-              run: npm i
+              run: npm run install
             # build doc
             - name: Build docs
               run: npm run docs

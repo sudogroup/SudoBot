@@ -9,7 +9,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [12.x]
-                platform: [ubuntu-latest] #[ubuntu-latest, windows-latest, macos-latest]
+                platform: [ubuntu-latest, windows-latest, macos-latest]
         # Build OS
         runs-on: ${{ matrix.platform }}
         # CI
@@ -22,7 +22,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             # install packages
             - name: Install Packages
-              run: npm i
+              run: npm run install
             # create a config file
             - name: Create Config File
               uses: "finnp/create-file-action@master"
