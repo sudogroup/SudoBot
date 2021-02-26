@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "install": "./scripts/install_packages.sh",
+        "install": "bash scripts/install_packages.sh",
         "dev": "prettier --write app/* --tab-width 4 && nodemon app/index.js",
         "dep": "pm2 start app/index.js",
         "docs": "./node_modules/.bin/docma -c docma.json && prettier --write app/* --tab-width 4",
