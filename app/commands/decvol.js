@@ -22,7 +22,15 @@ const decvol = async (msg) => {
     let percentage = 25 / 100; // if you want to use args just adjust the "25" to argument variable.
 
     const serverQueue = musicQueue.get(msg.guild.id);
-    let volume = serverQueue.connection.dispatcher.volume - percentage;
+
+    let volume = serverQueue.connection.dispatcher.volume;
+    if (volume == 0) {
+        return msg.channel.send(
+            `${msg.author.toString()} Voice volume 0, Could not be lowered more!`
+        );
+    }
+
+    volume = Math.max(volume - percentage, 0);
 
     if (serverQueue.connection.dispatcher.setVolume(volume)) {
         msg.channel.send(`${msg.author.toString()} Voice has been lowered.`);

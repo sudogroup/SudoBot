@@ -19,13 +19,30 @@ const incvol = async (msg) => {
     let percentage = 25 / 100; // if you want to use args just adjust the "25" to argument variable.
 
     const serverQueue = musicQueue.get(msg.guild.id);
-    let volume = serverQueue.connection.dispatcher.volume + percentage;
 
-    if (serverQueue.connection.dispatcher.setVolume(volume)) {
-        msg.channel.send(`${msg.author.toString()} Voice has been increased.`);
+    let volume = serverQueue.connection.dispatcher.volume;
+
+    if (volume == 1) {
+        return msg.channel.send(
+            `${msg.author.toString()} Voice volume 100, Could not be increased more!`
+        );
+    }
+
+    volume = Math.min(volume + percentage, 100);
+
+    if (volume < 100) {
+        if (serverQueue.connection.dispatcher.setVolume(volume)) {
+            msg.channel.send(
+                `${msg.author.toString()} Voice has been increased.`
+            );
+        } else {
+            msg.channel.send(
+                `${msg.author.toString()} Voice has not been increased, please try again!`
+            );
+        }
     } else {
         msg.channel.send(
-            `${msg.author.toString()} Voice has not been increased, please try again!`
+            `${msg.author.toString()} You have been reached the maximum volume!`
         );
     }
 };
