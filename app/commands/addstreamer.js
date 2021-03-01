@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const addstreamer = async (msg, args) => {
+const addstreamer = async (msg, args, test = true) => {
     // get all roles and channels
     const roles = new Map(),
         channels = new Map();
@@ -30,10 +30,11 @@ const addstreamer = async (msg, args) => {
 
     console.log(twitch_username);
     console.log(discord_username.guild.id);
-
-    await db.runAsync(
-        `INSERT INTO streamer (streamerDiscordUsername, streamerTwitchUsername, streamerStatus, streamerLastLive) VALUES ('${twitch_username}','${discord_username.guild.id}',0,-1)`
-    );
+    if (!test) {
+        await db.runAsync(
+            `INSERT INTO streamer (streamerDiscordUsername, streamerTwitchUsername, streamerStatus, streamerLastLive) VALUES ('${twitch_username}','${discord_username.guild.id}',0,-1)`
+        );
+    }
 
     // add the user to the role
     discord_username.roles.add(roles.get("streamers").object);

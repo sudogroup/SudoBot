@@ -3,7 +3,7 @@
  * @param {Discord.Message} msg - discord message
  * @param {Array} args - passed arguments
  */
-const addproject = async (msg, args) => {
+const addproject = async (msg, args, test = true) => {
     // get all roles and channels
     const roles = new Map(),
         channels = new Map();
@@ -26,16 +26,17 @@ const addproject = async (msg, args) => {
 
     // get parameters
     const project = args[0];
-
     // create the new channel
     msg.guild.channels.create(project, {
         parent: channels.get("/projects").object,
     });
     msg.channel.send("A new project channel was created for " + project);
     // still missing creating a role
-    await db.runAsync(
-        `INSERT INTO project (projectName, projectRole) VALUES ('${project}',0)`
-    );
+    if (!test) {
+        await db.runAsync(
+            `INSERT INTO project (projectName, projectRole) VALUES ('${project}',0)`
+        );
+    }
 };
 module.exports = {
     name: "addproject",

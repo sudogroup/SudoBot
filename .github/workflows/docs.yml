@@ -1,0 +1,42 @@
+name: Building Docs
+on:
+    push:
+        branches:
+            - main
+jobs:
+    doc:
+        name: Documentation
+        # setup global configurations
+        strategy:
+            matrix:
+                node-version: [12.x]
+                platform: [ubuntu-latest]
+        # Build OS
+        runs-on: ${{ matrix.platform }}
+        # CI
+        steps:
+            - uses: actions/checkout@v2
+            # select nodejs v12
+            - name: Build Docs using Node.js v${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            # install packages
+            - name: Install Packages
+              run: npm i
+            # build doc
+            - name: Build docs
+              run: npm run docs
+            # add and commit
+            - name: Commit docs
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  git add -f docs
+                  git commit -m "Generating docs"
+            # push action
+            - name: Push changes
+              uses: ad-m/github-push-action@master
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: ${{ github.ref }}

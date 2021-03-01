@@ -1,4 +1,4 @@
-const { CONFIG_PATH } = require("../.env"),
+const { CONFIG_PATH } = require("../config"),
     { DISCORD_TOKEN } = require(`../${CONFIG_PATH}`),
     fs = require("fs"),
     sqlite3 = require("sqlite3").verbose();

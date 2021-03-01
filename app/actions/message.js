@@ -1,4 +1,4 @@
-const { PREFIX } = require("../../.env"),
+const { PREFIX } = require("../../config"),
     Discord = require("discord.js"),
     cooldowns = new Discord.Collection();
 

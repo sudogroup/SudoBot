@@ -1,4 +1,4 @@
-const { PREFIX } = require("../../.env");
+const { PREFIX } = require("../../config");
 /**
  * Execute on help command
  * @param {Discord.Message} msg - discord message
