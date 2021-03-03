@@ -1,6 +1,12 @@
+# private files
 config.json
+
+# compiled files
 node_modules/
-.vscode/
 coverage/
 docs/
 package-lock.json
+
+# development generated files
+.idea/
+.vscode/
