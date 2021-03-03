@@ -54,5 +54,7 @@ for (const file of commandFiles) {
 require("./actions/ready").execute(client);
 require("./actions/message").execute(client);
 require("./actions/reactions").execute(client);
+require("./actions/welcome").execute(client);
+// console.log(client.actions);
 
 client.login(DISCORD_TOKEN);
